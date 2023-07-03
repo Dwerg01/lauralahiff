@@ -1,0 +1,253 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-default",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "show_content": true,
+        "alignment": "text-left",
+        "page_nav": "",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "842341e0-85a0-41a9-b7be-692f6659819c": {
+      "type": "section-text",
+      "blocks": {
+        "template--19388296167715__842341e0-85a0-41a9-b7be-692f6659819c-168657016891dc0d34-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Laura Lahiff Links<\/h2>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--19388296167715__842341e0-85a0-41a9-b7be-692f6659819c-168657016891dc0d34-1"
+      ],
+      "custom_css": [
+        "{display: flex; justify-content: center;}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "94190197-67f1-4868-b38b-ff0a6778f90e": {
+      "type": "section-text",
+      "blocks": {
+        "642bfaf3-8442-4a77-aad6-5bb5542ab0b1": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Art",
+            "button_url": "shopify:\/\/collections",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        },
+        "a033ffe7-3f0a-4068-890f-bd3c6289ac74": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "a59f7fe6-5bcb-4b79-9659-008007e88056": {
+          "type": "button",
+          "settings": {
+            "button_text": "About Laura Lahiff",
+            "button_url": "shopify:\/\/pages\/about",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        },
+        "2ee37ffe-5bb8-4971-85c4-1545eddaa9d2": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "c627b540-fbf7-41a0-a955-3b344e63e54a": {
+          "type": "button",
+          "settings": {
+            "button_text": "FAQ",
+            "button_url": "shopify:\/\/pages\/faq",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "642bfaf3-8442-4a77-aad6-5bb5542ab0b1",
+        "a033ffe7-3f0a-4068-890f-bd3c6289ac74",
+        "a59f7fe6-5bcb-4b79-9659-008007e88056",
+        "2ee37ffe-5bb8-4971-85c4-1545eddaa9d2",
+        "c627b540-fbf7-41a0-a955-3b344e63e54a"
+      ],
+      "custom_css": [
+        "{display: flex; justify-content: center; text-transform: uppercase;}",
+        ".btn {margin: 10px auto; width: max-content; font-size: 14px; padding: 16px 40px;}",
+        ".text__standard {display: flex; flex-direction: column; text-align: center;}",
+        "@media screen and (max-width: 699px) {.text__standard {width: 300px; } .btn {width: 100%; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "8ec352b7-9513-4443-822d-a848033df2de": {
+      "type": "section-text",
+      "blocks": {
+        "258f76c4-82ad-4b59-87c7-af70b55f2984": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Sustainability",
+            "button_url": "",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        },
+        "f6e46c5c-7634-4231-8239-61e6333a8c98": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "5284a578-9b27-46d5-9ec2-d55a5fe4992e": {
+          "type": "button",
+          "settings": {
+            "button_text": "shop illustrations",
+            "button_url": "shopify:\/\/collections\/illustrations",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        },
+        "96464d79-008e-4513-92e6-1ea67a094255": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "ecd5e0c8-a654-46be-8d30-46d32926e674": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Latest Blogs",
+            "button_url": "",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "258f76c4-82ad-4b59-87c7-af70b55f2984",
+        "f6e46c5c-7634-4231-8239-61e6333a8c98",
+        "5284a578-9b27-46d5-9ec2-d55a5fe4992e",
+        "96464d79-008e-4513-92e6-1ea67a094255",
+        "ecd5e0c8-a654-46be-8d30-46d32926e674"
+      ],
+      "custom_css": [
+        "{display: flex; justify-content: center; text-transform: uppercase;}",
+        ".btn {margin: 10px auto; width: max-content; font-size: 14px; padding: 16px 40px;}",
+        ".btn:first-of-type {background: #81d435;}",
+        ".btn:last-of-type {background: #1d519c;}",
+        ".text__standard {display: flex; flex-direction: column; text-align: center;}",
+        "@media screen and (max-width: 699px) {.text__standard {width: 300px; } .btn {width: 100%; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "fd8c5533-df80-4a7e-a2a5-46ebfb8489e4": {
+      "type": "section-text",
+      "blocks": {
+        "template--19388296167715__fd8c5533-df80-4a7e-a2a5-46ebfb8489e4-168657016891dc0d34-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Blog Name<\/h2>",
+            "text_size": 9
+          }
+        },
+        "template--19388296167715__fd8c5533-df80-4a7e-a2a5-46ebfb8489e4-168657016891dc0d34-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "blog name 1",
+            "button_url": "shopify:\/\/blogs\/discover-more",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        },
+        "f64bb486-8136-4099-95fa-64570b141082": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "818d8d6f-2e9c-43a4-b961-351831480c53": {
+          "type": "button",
+          "settings": {
+            "button_text": "blog name 2",
+            "button_url": "shopify:\/\/blogs\/discover-more\/blog-title",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--19388296167715__fd8c5533-df80-4a7e-a2a5-46ebfb8489e4-168657016891dc0d34-1",
+        "template--19388296167715__fd8c5533-df80-4a7e-a2a5-46ebfb8489e4-168657016891dc0d34-3",
+        "f64bb486-8136-4099-95fa-64570b141082",
+        "818d8d6f-2e9c-43a4-b961-351831480c53"
+      ],
+      "custom_css": [
+        "h2 {margin-bottom: 40px;}",
+        " {display: flex; justify-content: center;}",
+        ".btn {background: #1d519c; text-transform: uppercase; font-size: 14px;}",
+        "@media screen and (max-width: 699px) {.text__standard {width: 300px; } .btn {width: 100%; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "842341e0-85a0-41a9-b7be-692f6659819c",
+    "94190197-67f1-4868-b38b-ff0a6778f90e",
+    "8ec352b7-9513-4443-822d-a848033df2de",
+    "fd8c5533-df80-4a7e-a2a5-46ebfb8489e4"
+  ]
+}

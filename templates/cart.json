@@ -1,0 +1,128 @@
+{
+  "sections": {
+    "main": {
+      "type": "cart",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "ae574188-688b-4d69-a8cb-758952815003": {
+      "type": "section-text",
+      "blocks": {
+        "template--19329479082275__ae574188-688b-4d69-a8cb-758952815003-1686318946e09872d5-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>Your Shopping cart is empty.<\/h1>",
+            "text_size": 14
+          }
+        },
+        "template--19329479082275__ae574188-688b-4d69-a8cb-758952815003-1686318946e09872d5-0": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "<h3>Having problems?<\/h3>",
+            "enable_caps": false,
+            "text_size": 1
+          }
+        },
+        "template--19329479082275__ae574188-688b-4d69-a8cb-758952815003-1686318946e09872d5-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you cannot place an item in your cart, your browser might not support cookies.<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "37adcf51-7e77-4a70-b52e-6c9c94824d94": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"\/\" title=\"\/\">Learn More<\/a><\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "f14ce8f8-dca6-4101-972a-c8b6a463251e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> online or call <a href=\"\/pages\/contact\" title=\"Contact\">+123-4-567-8900<\/a>.<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "template--19329479082275__ae574188-688b-4d69-a8cb-758952815003-1686318946e09872d5-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "SHOP ALL PRODUCTS",
+            "button_url": "",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479082275__ae574188-688b-4d69-a8cb-758952815003-1686318946e09872d5-1",
+        "template--19329479082275__ae574188-688b-4d69-a8cb-758952815003-1686318946e09872d5-0",
+        "template--19329479082275__ae574188-688b-4d69-a8cb-758952815003-1686318946e09872d5-2",
+        "37adcf51-7e77-4a70-b52e-6c9c94824d94",
+        "f14ce8f8-dca6-4101-972a-c8b6a463251e",
+        "template--19329479082275__ae574188-688b-4d69-a8cb-758952815003-1686318946e09872d5-3"
+      ],
+      "custom_css": [
+        "p,a,h3 {font-size: 16px;}",
+        "a {color: #ec5306; text-decoration: underline; font-weight: 600; margin-block: 0px 40px;}",
+        ".standard__cta {color: #fff; text-decoration: none; width: 300px;}",
+        "@media screen and (min-width: 700px) {.standard__cta {position: absolute; left: 63%; bottom: 52%; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "0c1652a1-757e-4e73-90fa-bc8beec637f3": {
+      "type": "section-text",
+      "blocks": {
+        "template--19329479082275__0c1652a1-757e-4e73-90fa-bc8beec637f3-1686318946e09872d5-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Recently Viewed<\/h2>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479082275__0c1652a1-757e-4e73-90fa-bc8beec637f3-1686318946e09872d5-1"
+      ],
+      "custom_css": [
+        "{width: 300px;}",
+        "@media screen and (max-width: 699px) {{width: 100%; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "571f3d47-fc48-4d90-bf8c-44ad55127e0a": {
+      "type": "section-recent-products",
+      "settings": {
+        "product_recently_heading": "",
+        "product_recently_limit": 3,
+        "product_recently_minimum": 1,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ae574188-688b-4d69-a8cb-758952815003",
+    "0c1652a1-757e-4e73-90fa-bc8beec637f3",
+    "571f3d47-fc48-4d90-bf8c-44ad55127e0a"
+  ]
+}

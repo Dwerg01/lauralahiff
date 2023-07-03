@@ -1,0 +1,52 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "toolbar": {
+          "type": "toolbar",
+          "settings": {
+            "announcement_text": "<p>Sign up to receive 10% off prints<\/p>",
+            "secondary_linklist": "",
+            "show_menu_desktop": true,
+            "show_menu_mobile": true,
+            "show_locale_desktop": true,
+            "show_locale_mobile": true,
+            "show_currency_desktop": true,
+            "show_currency_mobile": true,
+            "currency_select_type": "country"
+          }
+        }
+      },
+      "block_order": [
+        "toolbar"
+      ],
+      "custom_css": [
+        ".navtext {font-size: 32px; text-transform: uppercase;}",
+        ".theme__header__toolbar__text {padding: 10px 0;}",
+        ".wrapper {padding-block: 10px 0;}",
+        ".theme__header__toolbar {height: 50px;}",
+        ".theme__header-inner {margin-block: -17px;}",
+        ".icon {color: #ec5306; width: 35px; height: 35px;}",
+        "@media screen and (max-width: 699px) {.icon {width: 24px; height: 24px; } .navtext {font-size: 24px; } .icon {fill: #ec5306; }}"
+      ],
+      "settings": {
+        "header_style": "logo_beside",
+        "full_width": false,
+        "logo": "shopify:\/\/shop_images\/Laura_Lahiff_Logo_SVG.svg",
+        "logo_max_limit": 165,
+        "main_menu_linklist": "main-menu",
+        "enable_search": true,
+        "enable_account": true,
+        "header_sticky": "static",
+        "transparent_home": false,
+        "transparent_collection": false
+      }
+    }
+  },
+  "order": [
+    "header"
+  ]
+}

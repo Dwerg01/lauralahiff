@@ -1,0 +1,146 @@
+
+<div class="shopify-section section-section">
+  <div class="wrapper posts">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+    
+        {%- when 'blog-selector' -%}
+          {%- assign blog-block = block.settings.blog-block -%}
+        <div class="custom-blog">
+          
+          <h3 class="custom-blog-title">{{ blog-block.title }}</h3>
+          {%- assign blog-block_articles = blog-block.articles -%}
+          {%- for article in blog-block_articles -%}
+            <a class="custom-blog-article-link" href="{{ article.url }}" data-year="{{ article.published_at | slice:0,4 }}">  
+              <p class="custom-blog-article">{{ article.title }}</p>
+            </a>
+          {%- endfor -%}
+          <div class="read-more-box">
+            <a class="read-more-link" href="{{ blog-block.url }}">more about {{ blog-block.title }}</a>
+          </div>
+        </div>
+      {%- endcase -%}
+    {%- endfor -%}
+      </div>
+  </div>
+
+<div class="selector-wrapper">
+<div class="wrapper">
+  
+<div class="filter-block">
+      <h4 class="selector">Select year</h4>
+    <div class="filter-selector-block">
+      {% for i in (2021..2023) %}
+        <a class="yearButton"><p class="year-selector">{{ i }}</p></a>
+      {% endfor %}
+    </div>
+</div>
+</div>
+</div>
+
+{% javascript %}
+  const selector = document.querySelector(".custom-blog")
+
+{% endjavascript %}
+
+
+{% style %}
+  :root {   
+  --custom-margin : 36px;
+  }
+
+  .selector-wrapper {
+    
+    background-color: #DAE9FD;
+  }
+  .filter-selector-block {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+  }
+  .selector {
+    font-size: 12px;
+    text-transform: uppercase;
+    
+  }
+  .year-selector {
+    padding: 6px 16px;
+    border: 2px solid #1D519C;
+    color: #1D519C;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .wrapper.posts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .custom-blog {
+    flex: 1 0 calc(50% - 2 * (var(--custom-margin)));
+    flex-gap: var(--custom-margin);
+    margin-inline: 36px;
+    
+  }
+  .custom-blog-title {
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    
+  }
+  .custom-blog-title, .custom-blog-article {
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #1D519C;
+    padding-bottom: 16px;
+  }
+  
+  .read-more-link {
+    font-size: 14px;
+    color: #1D519C;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px solid #1D519C;
+    border-radius: 6px;
+    padding: 14px 40px;
+    letter-spacing: 0.25px;
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+@media screen and (max-width:699px) {
+  .custom-blog {
+    flex: 1 0 calc(100% - var(--custom-margin));
+    margin-inline: 0;
+  }
+  .custom-blog-article {
+    padding: 14px 10px;}
+}
+{% endstyle %}
+
+{% schema %}
+  {
+  "name": "blog-list",
+  "class": "blog-list",
+  "max_blocks": 8,
+  "settings": [],
+  "blocks": [
+    {
+      "name": "blog-selector",
+      "type": "blog-selector",
+      "settings": [
+        {
+          "type": "blog",
+          "id": "blog-block",
+          "label": "blog-block",
+          "info": "place the blog here that you want to display"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "blog-list"
+    }
+  ]
+}  
+{% endschema %}
+

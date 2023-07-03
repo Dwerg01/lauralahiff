@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "main": {
+      "type": "404",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c34caf05-7b61-410b-a17a-8a79ae23ce7a": {
+      "type": "section-text",
+      "blocks": {
+        "template--19371654349091__c34caf05-7b61-410b-a17a-8a79ae23ce7a-1686555785ed904580-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>We're sorry<\/h1>",
+            "text_size": 9
+          }
+        },
+        "template--19371654349091__c34caf05-7b61-410b-a17a-8a79ae23ce7a-1686555785ed904580-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The page you're looking for is not available for one of the following reasons:<\/p><ul><li>The link to this page may be incorrect or out-of-date.<\/li><li>You may have bookmarked a page that has been moved.<\/li><\/ul><p>Please continue shopping from our <a href=\"\/\" title=\"\/\">homepage<\/a> or use our search feature. You can also <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> for help.<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--19371654349091__c34caf05-7b61-410b-a17a-8a79ae23ce7a-1686555785ed904580-1",
+        "template--19371654349091__c34caf05-7b61-410b-a17a-8a79ae23ce7a-1686555785ed904580-2"
+      ],
+      "custom_css": [
+        "p,li {font-size: 16px;}",
+        "a {color: #ec5306;}",
+        "h1 {font-size: 48px;}",
+        "@media screen and (max-width: 699px) {h1 {font-size: 32px; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b5653539-d9ca-4277-961a-6c931dbe0330": {
+      "type": "section-text",
+      "blocks": {
+        "template--19371654349091__b5653539-d9ca-4277-961a-6c931dbe0330-1686555785ed904580-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>People who viewed items you browsed also viewed<\/h2>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--19371654349091__b5653539-d9ca-4277-961a-6c931dbe0330-1686555785ed904580-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "76a3c1f8-72bf-41a3-9e2e-7abc3c6f532c": {
+      "type": "section-collection",
+      "custom_css": [
+        "p {font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "section-class": "Add classes here to enable tab swticher functionality",
+        "collection": "original-paintings",
+        "grid": 3,
+        "limit": 8,
+        "enable_slider": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_view_all": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c34caf05-7b61-410b-a17a-8a79ae23ce7a",
+    "b5653539-d9ca-4277-961a-6c931dbe0330",
+    "76a3c1f8-72bf-41a3-9e2e-7abc3c6f532c"
+  ]
+}

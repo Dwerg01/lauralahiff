@@ -1,0 +1,560 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-default",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "show_content": true,
+        "alignment": "text-left",
+        "page_nav": "",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "362a9d5c-16dd-4449-817e-88ac67741a39": {
+      "type": "section-text",
+      "blocks": {
+        "template--19329479541027__362a9d5c-16dd-4449-817e-88ac67741a39-16862861222dec0264-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>{{ page.title }}<\/p>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479541027__362a9d5c-16dd-4449-817e-88ac67741a39-16862861222dec0264-1"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 48px;}",
+        "@media screen and (max-width: 699px) {.h2 {font-size: 32px; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f1bc4be9-c53e-421f-b6a5-abc17bbe518f": {
+      "type": "section-accordion",
+      "blocks": {
+        "ce3c5668-c679-460d-99b6-6356acf92465": {
+          "type": "text",
+          "settings": {
+            "title": "Is my payment data safe with you?",
+            "content": "<p>All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express, and Discover.<\/p>"
+          }
+        },
+        "9147e4de-9743-4f09-a795-5cb9a87ba199": {
+          "type": "text",
+          "settings": {
+            "title": "Do you accept online payments?",
+            "content": "<p>Yes, we accept online payments. All payment processing and vital customer information is quick, easy, and secure.<br\/><\/p><p>Learn more about our store's safe checkout experience (powered by Shopify) <a href=\"https:\/\/www.shopify.com\/legal\/terms#DataProtection\" target=\"_blank\" title=\"https:\/\/www.shopify.com\/legal\/terms#DataProtection\">here<\/a>.<\/p>"
+          }
+        },
+        "ddda6909-a3d3-48dc-9b92-6d9a798ec4f0": {
+          "type": "text",
+          "settings": {
+            "title": "Where can I learn more about the payment and processing on your store?",
+            "content": "<p>For more insight, you may also want to read Shopify’s Terms of Service <a href=\"https:\/\/www.shopify.com\/legal\/terms\" target=\"_blank\" title=\"https:\/\/www.shopify.com\/legal\/terms\">here<\/a> or Privacy Statement <a href=\"https:\/\/www.shopify.com\/legal\/privacy\" target=\"_blank\" title=\"https:\/\/www.shopify.com\/legal\/privacy\">here<\/a>.<\/p>"
+          }
+        },
+        "5def6069-006f-4afe-9a96-8bbfd12f3b6c": {
+          "type": "text",
+          "settings": {
+            "title": "What forms of payment do you accept?",
+            "content": "<p>We accept payments from major credit card companies like Visa, Mastercard, and American Express.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ce3c5668-c679-460d-99b6-6356acf92465",
+        "9147e4de-9743-4f09-a795-5cb9a87ba199",
+        "ddda6909-a3d3-48dc-9b92-6d9a798ec4f0",
+        "5def6069-006f-4afe-9a96-8bbfd12f3b6c"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px; text-transform: uppercase;}",
+        "button {font-size: 22px;}",
+        ".accordion__wrapper {border-bottom: 1px solid #ef5d08;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; } button {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "packaging",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "accordion-section-2": {
+      "type": "section-accordion",
+      "blocks": {
+        "accordion_block_2_0": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "content": "<p>Domestic shipping can take up to 5 business days.<br\/><br\/>Foreign shipping could take up to 14 business days.<br\/><br\/>Due to global supply chain challenges, shipping times could be longer than usual.<\/p>"
+          }
+        },
+        "accordion_block_2_1": {
+          "type": "text",
+          "settings": {
+            "title": "How much does it cost?",
+            "content": "<p>Shipping rates can vary depending on your region and are calculated at checkout.<br\/><br\/>Here are the full details of our <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a>.<\/p>"
+          }
+        },
+        "accordion_block_2_2": {
+          "type": "text",
+          "settings": {
+            "title": "Is there free shipping?",
+            "content": "<p>Yes, we offer free shipping for large domestic orders.  Check the cart to see the current deal on free shipping..<\/p>"
+          }
+        },
+        "accordion_block_2_3": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Yes, we ship our products all over the globe.<br\/><br\/>Please note that free shipping is not applicable for international orders and that shipping rates could vary depending on your region.<\/p>"
+          }
+        },
+        "accordion_block_2_4": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship to my area?",
+            "content": "<p>A full list of all of our shipping areas can be found <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">here<\/a>.<br\/><br\/>If your country or region is not mentioned, please feel free to reach out to see if we can work out the details.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_2_0",
+        "accordion_block_2_1",
+        "accordion_block_2_2",
+        "accordion_block_2_3",
+        "accordion_block_2_4"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px; text-transform: uppercase;}",
+        "button {font-size: 22px;}",
+        ".accordion__wrapper {border-bottom: 1px solid #ef5d08;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; } button {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "Delivery",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "9a4bdbb9-97a6-49ad-b9a4-d0ba394d07ba": {
+      "type": "section-accordion",
+      "blocks": {
+        "01986cc4-9842-4897-bd71-9de34204ed26": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "content": "<p>Domestic shipping can take up to 5 business days.<br\/><br\/>Foreign shipping could take up to 14 business days.<br\/><br\/>Due to global supply chain challenges, shipping times could be longer than usual.<\/p>"
+          }
+        },
+        "ecc85267-1e43-435e-bf3d-b6a6f5ce44ba": {
+          "type": "text",
+          "settings": {
+            "title": "How much does it cost?",
+            "content": "<p>Shipping rates can vary depending on your region and are calculated at checkout.<br\/><br\/>Here are the full details of our <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a>.<\/p>"
+          }
+        },
+        "607d27ca-a1a2-4687-afee-01a73ba4434b": {
+          "type": "text",
+          "settings": {
+            "title": "Is there free shipping?",
+            "content": "<p>Yes, we offer free shipping for large domestic orders.  Check the cart to see the current deal on free shipping..<\/p>"
+          }
+        },
+        "ced093e4-6695-46e2-b2e2-d5623dc15e81": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Yes, we ship our products all over the globe.<br\/><br\/>Please note that free shipping is not applicable for international orders and that shipping rates could vary depending on your region.<\/p>"
+          }
+        },
+        "1a7a2bc0-e6ca-4f0e-bf0b-177e0e6248cf": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship to my area?",
+            "content": "<p>A full list of all of our shipping areas can be found <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">here<\/a>.<br\/><br\/>If your country or region is not mentioned, please feel free to reach out to see if we can work out the details.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "01986cc4-9842-4897-bd71-9de34204ed26",
+        "ecc85267-1e43-435e-bf3d-b6a6f5ce44ba",
+        "607d27ca-a1a2-4687-afee-01a73ba4434b",
+        "ced093e4-6695-46e2-b2e2-d5623dc15e81",
+        "1a7a2bc0-e6ca-4f0e-bf0b-177e0e6248cf"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px; text-transform: uppercase;}",
+        "button {font-size: 22px;}",
+        ".accordion__wrapper {border-bottom: 1px solid #ef5d08;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; } button {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "Commissions",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "accordion-section-3": {
+      "type": "section-accordion",
+      "blocks": {
+        "accordion_block_3_0": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer warranty for your products?",
+            "content": "<p>All our products are subject to quality control.<br\/><br\/>Our warranty provides a guarantee against manufacturer defects.<br\/><br\/>The guarantee covers any manufacturing, design, or material defect. Please notify us within 2 months of noticing any defects.<br\/><br\/>It does not cover blows, improper use, or other issues that are not attributable to a manufacturer defects.<\/p>"
+          }
+        },
+        "accordion_block_3_1": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer extended warranty?",
+            "content": "<p>An extended warranty can be added to your products for an additional cost.<br\/><br\/>Please get in touch for more information about extended warranties.<\/p>"
+          }
+        },
+        "accordion_block_3_2": {
+          "type": "text",
+          "settings": {
+            "title": "How much does extended warranty cost?",
+            "content": "<p>The extended warranty could come at a different cost depending on the type of product and extended period.<br\/><br\/>Please get in touch for more information.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_3_0",
+        "accordion_block_3_1",
+        "accordion_block_3_2"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px; text-transform: uppercase;}",
+        "button {font-size: 22px;}",
+        ".accordion__wrapper {border-bottom: 1px solid #ef5d08;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; } button {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "Shipping",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "accordion-section-4": {
+      "type": "section-accordion",
+      "blocks": {
+        "accordion_block_4_0": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer refunds?",
+            "content": "<p>Yes, we offer full and partial refunds.<br\/><br\/>Please enquire for more information about our Refund policy.<\/p>"
+          }
+        },
+        "accordion_block_4_1": {
+          "type": "text",
+          "settings": {
+            "title": "How long after I complete a purchase can I ask for a refund?",
+            "content": "<p>A refund request can be submitted within a month after the purchase is made.<\/p>"
+          }
+        },
+        "accordion_block_4_2": {
+          "type": "text",
+          "settings": {
+            "title": "How much can I get refunded?",
+            "content": "<p>In the case when the<strong>product and packaging are unopened and undamaged<\/strong>, you are<strong>eligible<\/strong>for a full refund.<br\/><br\/>In the case when<strong>the packaging has been opened and the product has been used<\/strong>, you are<strong>eligible<\/strong>for a partial refund.<br\/><br\/>In the case when a<strong>product has been damaged<\/strong>, and the damage is not covered by your warranty, you are<strong>not eligible<\/strong>for a refund.<br\/><br\/>Please check our <a href=\"\/policies\/terms-of-service\" title=\"Terms of Service\">Terms of Service<\/a> to see if you're eligible for a refund.<\/p>"
+          }
+        },
+        "accordion_block_4_3": {
+          "type": "text",
+          "settings": {
+            "title": "Who pays the shipping costs in the case of a refund when the order doesn't have free shipping?",
+            "content": "<p>When an order does not include free shipping, all shipping costs (including the return shipping) are handled by the customer.<\/p>"
+          }
+        },
+        "accordion_block_4_4": {
+          "type": "text",
+          "settings": {
+            "title": "Who pays the shipping costs in the case of a refund when the order has free shipping?",
+            "content": "<p>When an order includes free shipping, only the cost of the return shipping is handled by the customer.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_4_0",
+        "accordion_block_4_1",
+        "accordion_block_4_2",
+        "accordion_block_4_3",
+        "accordion_block_4_4"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px; text-transform: uppercase;}",
+        "button {font-size: 22px;}",
+        ".accordion__wrapper {border-bottom: 1px solid #ef5d08;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; } button {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "Returns & Refunds",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
+    "accordion-section-1": {
+      "type": "section-accordion",
+      "blocks": {
+        "accordion_block_1_1": {
+          "type": "text",
+          "settings": {
+            "title": "Is my payment data safe with you?",
+            "content": "<p>All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express, and Discover.<\/p>"
+          }
+        },
+        "accordion_block_1_2": {
+          "type": "text",
+          "settings": {
+            "title": "Do you accept online payments?",
+            "content": "<p>Yes, we accept online payments. All payment processing and vital customer information is quick, easy, and secure.<br\/><\/p><p>Learn more about our store's safe checkout experience (powered by Shopify) <a href=\"https:\/\/www.shopify.com\/legal\/terms#DataProtection\" target=\"_blank\" title=\"https:\/\/www.shopify.com\/legal\/terms#DataProtection\">here<\/a>.<\/p>"
+          }
+        },
+        "accordion_block_1_3": {
+          "type": "text",
+          "settings": {
+            "title": "Where can I learn more about the payment and processing on your store?",
+            "content": "<p>For more insight, you may also want to read Shopify’s Terms of Service <a href=\"https:\/\/www.shopify.com\/legal\/terms\" target=\"_blank\" title=\"https:\/\/www.shopify.com\/legal\/terms\">here<\/a> or Privacy Statement <a href=\"https:\/\/www.shopify.com\/legal\/privacy\" target=\"_blank\" title=\"https:\/\/www.shopify.com\/legal\/privacy\">here<\/a>.<\/p>"
+          }
+        },
+        "accordion_block_1_4": {
+          "type": "text",
+          "settings": {
+            "title": "What forms of payment do you accept?",
+            "content": "<p>We accept payments from major credit card companies like Visa, Mastercard, and American Express.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_1_1",
+        "accordion_block_1_2",
+        "accordion_block_1_3",
+        "accordion_block_1_4"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px; text-transform: uppercase;}",
+        "button {font-size: 22px;}",
+        ".accordion__wrapper {border-bottom: 1px solid #ef5d08;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; } button {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "Payments & Taxes",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "31a7119b-da76-4d3e-91b3-189d41db01fb": {
+      "type": "section-accordion",
+      "blocks": {
+        "52cf63da-664f-495a-b2e1-438bee948aa4": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "content": "<p>Domestic shipping can take up to 5 business days.<br\/><br\/>Foreign shipping could take up to 14 business days.<br\/><br\/>Due to global supply chain challenges, shipping times could be longer than usual.<\/p>"
+          }
+        },
+        "6fefd151-adc7-48de-bd69-f136f0ad02fb": {
+          "type": "text",
+          "settings": {
+            "title": "How much does it cost?",
+            "content": "<p>Shipping rates can vary depending on your region and are calculated at checkout.<br\/><br\/>Here are the full details of our <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a>.<\/p>"
+          }
+        },
+        "17b8c7e2-0f50-4c89-be5c-a9c2a04941df": {
+          "type": "text",
+          "settings": {
+            "title": "Is there free shipping?",
+            "content": "<p>Yes, we offer free shipping for large domestic orders.  Check the cart to see the current deal on free shipping..<\/p>"
+          }
+        },
+        "b743341f-0914-489b-a648-eb526e9a86be": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Yes, we ship our products all over the globe.<br\/><br\/>Please note that free shipping is not applicable for international orders and that shipping rates could vary depending on your region.<\/p>"
+          }
+        },
+        "5c3d10c9-7040-4170-8477-2302407caffc": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship to my area?",
+            "content": "<p>A full list of all of our shipping areas can be found <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">here<\/a>.<br\/><br\/>If your country or region is not mentioned, please feel free to reach out to see if we can work out the details.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "52cf63da-664f-495a-b2e1-438bee948aa4",
+        "6fefd151-adc7-48de-bd69-f136f0ad02fb",
+        "17b8c7e2-0f50-4c89-be5c-a9c2a04941df",
+        "b743341f-0914-489b-a648-eb526e9a86be",
+        "5c3d10c9-7040-4170-8477-2302407caffc"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px; text-transform: uppercase;}",
+        "button {font-size: 22px;}",
+        ".accordion__wrapper {border-bottom: 1px solid #ef5d08;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; } button {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "About our Products",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "59cc9206-c199-4ff9-bbde-ab60e2a833cf": {
+      "type": "section-accordion",
+      "blocks": {
+        "4b5056ab-25c0-40e9-ac91-e106c7d38668": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "content": "<p>Domestic shipping can take up to 5 business days.<br\/><br\/>Foreign shipping could take up to 14 business days.<br\/><br\/>Due to global supply chain challenges, shipping times could be longer than usual.<\/p>"
+          }
+        },
+        "e2059ec7-c64b-46e0-b49e-380f7d5fd360": {
+          "type": "text",
+          "settings": {
+            "title": "How much does it cost?",
+            "content": "<p>Shipping rates can vary depending on your region and are calculated at checkout.<br\/><br\/>Here are the full details of our <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a>.<\/p>"
+          }
+        },
+        "10bd7fe7-6d1f-4ef3-bfbe-5c1dce88575d": {
+          "type": "text",
+          "settings": {
+            "title": "Is there free shipping?",
+            "content": "<p>Yes, we offer free shipping for large domestic orders.  Check the cart to see the current deal on free shipping..<\/p>"
+          }
+        },
+        "552693ed-8f6b-428d-aa39-95449b07d2c9": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>Yes, we ship our products all over the globe.<br\/><br\/>Please note that free shipping is not applicable for international orders and that shipping rates could vary depending on your region.<\/p>"
+          }
+        },
+        "35934e31-4a20-4b08-9af0-24889353d20c": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship to my area?",
+            "content": "<p>A full list of all of our shipping areas can be found <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">here<\/a>.<br\/><br\/>If your country or region is not mentioned, please feel free to reach out to see if we can work out the details.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4b5056ab-25c0-40e9-ac91-e106c7d38668",
+        "e2059ec7-c64b-46e0-b49e-380f7d5fd360",
+        "10bd7fe7-6d1f-4ef3-bfbe-5c1dce88575d",
+        "552693ed-8f6b-428d-aa39-95449b07d2c9",
+        "35934e31-4a20-4b08-9af0-24889353d20c"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px; text-transform: uppercase;}",
+        "button {font-size: 22px;}",
+        ".accordion__wrapper {border-bottom: 1px solid #ef5d08;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; } button {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "About Laura Lahiff",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "0e261b3a-b4cc-47a5-b793-5646852c7fd4": {
+      "type": "section-text",
+      "blocks": {
+        "template--19329479541027__0e261b3a-b4cc-47a5-b793-5646852c7fd4-16862861222dec0264-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Got more questions?<\/p>",
+            "text_size": 11
+          }
+        },
+        "template--19329479541027__0e261b3a-b4cc-47a5-b793-5646852c7fd4-16862861222dec0264-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please email me at hello@lauralahiff.com<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479541027__0e261b3a-b4cc-47a5-b793-5646852c7fd4-16862861222dec0264-1",
+        "template--19329479541027__0e261b3a-b4cc-47a5-b793-5646852c7fd4-16862861222dec0264-2"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "362a9d5c-16dd-4449-817e-88ac67741a39",
+    "f1bc4be9-c53e-421f-b6a5-abc17bbe518f",
+    "accordion-section-2",
+    "9a4bdbb9-97a6-49ad-b9a4-d0ba394d07ba",
+    "accordion-section-3",
+    "accordion-section-4",
+    "accordion-section-1",
+    "31a7119b-da76-4d3e-91b3-189d41db01fb",
+    "59cc9206-c199-4ff9-bbde-ab60e2a833cf",
+    "0e261b3a-b4cc-47a5-b793-5646852c7fd4"
+  ]
+}

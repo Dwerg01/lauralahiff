@@ -1,0 +1,270 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-default",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "show_content": true,
+        "alignment": "text-left",
+        "page_nav": "",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "0511acaf-a0d6-4c7e-9527-16e748777ae7": {
+      "type": "section-hero",
+      "blocks": {
+        "template--18382273675555__0511acaf-a0d6-4c7e-9527-16e748777ae7-16861471449693b8dc-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Image banner<\/p>",
+            "text_size": 10
+          }
+        },
+        "template--18382273675555__0511acaf-a0d6-4c7e-9527-16e748777ae7-16861471449693b8dc-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>This area is used to describe your store<\/p>",
+            "text_size": 6,
+            "text_columns": 1
+          }
+        },
+        "template--18382273675555__0511acaf-a0d6-4c7e-9527-16e748777ae7-16861471449693b8dc-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn More",
+            "button_url": "",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn",
+            "button_color": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "template--18382273675555__0511acaf-a0d6-4c7e-9527-16e748777ae7-16861471449693b8dc-0",
+        "template--18382273675555__0511acaf-a0d6-4c7e-9527-16e748777ae7-16861471449693b8dc-1",
+        "template--18382273675555__0511acaf-a0d6-4c7e-9527-16e748777ae7-16861471449693b8dc-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "height": "use_screen_two_thirds",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "flex_align": "align--middle-left",
+        "align_text": "text-left",
+        "color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "8cb6440c-ad91-4e77-a839-7ee6bcb9c5b0": {
+      "type": "section-text",
+      "blocks": {
+        "template--18382273675555__8cb6440c-ad91-4e77-a839-7ee6bcb9c5b0-168614719388a731dc-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--18382273675555__8cb6440c-ad91-4e77-a839-7ee6bcb9c5b0-168614719388a731dc-2"
+      ],
+      "custom_css": [
+        "* {background-color: #ec5306;}",
+        "p {color: #fff;}"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "af570a8e-33c5-4cb4-8a38-42492cffccd5": {
+      "type": "section-text",
+      "blocks": {
+        "f9c889a1-a0fa-4740-b156-58c358b1af15": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>About<\/p>",
+            "text_size": 11
+          }
+        },
+        "c436358c-3018-4803-8f27-bd341e54e6c3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "f9c889a1-a0fa-4740-b156-58c358b1af15",
+        "c436358c-3018-4803-8f27-bd341e54e6c3"
+      ],
+      "custom_css": [
+        "h2 {font-size: 48px;}"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2fdeb7ab-6ec0-4d93-b397-4fdb7e0d4c5f": {
+      "type": "section-row",
+      "custom_css": [
+        ".overlap__item {background-color: #fff;}",
+        "h2 {font-size: 32px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "left",
+        "title": "Sustainability",
+        "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f3dfdb73-d164-41f5-983b-eea050a838a4": {
+      "type": "section-row",
+      "custom_css": [
+        ".overlap__item {background-color: #fff;}",
+        "h2 {font-size: 32px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "right",
+        "title": "Carbon footprint",
+        "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3013e57d-39ca-4821-aff5-ca1e4584431c": {
+      "type": "section-row",
+      "custom_css": [
+        ".overlap__item {background-color: #fff;}",
+        "h2 {font-size: 32px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "left",
+        "title": "My Other Work in Sustainability",
+        "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e142f974-105a-4845-b291-a410cbbe85a9": {
+      "type": "section-text",
+      "blocks": {
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-0": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "",
+            "enable_caps": false,
+            "text_size": 5
+          }
+        },
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Discover more<\/h2>",
+            "text_size": 15
+          }
+        },
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "VIEW ALL BLOG POSTS",
+            "button_url": "shopify:\/\/blogs\/discover-more",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn--soft",
+            "button_color": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-0",
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-1",
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-2",
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-3"
+      ],
+      "custom_css": [
+        "h2,p {color: white;}",
+        "h2 {margin: 76px 0 32px 0;}",
+        "h2::after {background-color: #fff;}",
+        "a {margin: 72px 0; align-self: center; font-size: 14px; font-weight: 700; background-color: white; color: #1d519c;}",
+        "@media screen and (max-width: 699px) {a {margin: 30px 0; } h2 {margin: 40px 0 30px; }}"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "color_bg": "palette--dark bg--invert--accent",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0511acaf-a0d6-4c7e-9527-16e748777ae7",
+    "8cb6440c-ad91-4e77-a839-7ee6bcb9c5b0",
+    "af570a8e-33c5-4cb4-8a38-42492cffccd5",
+    "2fdeb7ab-6ec0-4d93-b397-4fdb7e0d4c5f",
+    "f3dfdb73-d164-41f5-983b-eea050a838a4",
+    "3013e57d-39ca-4821-aff5-ca1e4584431c",
+    "e142f974-105a-4845-b291-a410cbbe85a9"
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "sections": {
+    "3877cf02-89cb-4f4f-b44d-67c74b1ea331": {
+      "type": "section-row",
+      "custom_css": [
+        ".wrapper--full {padding: 0;}",
+        ".overlap__item {margin-inline: 0;}",
+        "h2 {font-size: 48px;}",
+        "h2::after {background: transparent;}",
+        ".overlap__text {padding: 0 60px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 32px; } .overlap__image {display: none; } .overlap__text {padding: 0 20px; text-align: center; } .overlap {flex-direction: column-reverse; } .overlap__item {margin-block: 0; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "right",
+        "title": "All Products",
+        "text": "<p>Explore our range of products aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "main": {
+      "type": "list-collections",
+      "disabled": true,
+      "custom_css": [
+        ".grid--uniform {grid-template-columns: repeat(2, 1fr); display: grid; justify-content: space-evenly; margin-left: 0; gap: 96px;}",
+        ".grid__item {width: 100%; padding: 0;}",
+        ".lazy-image {width: 530px; aspect-ratio: 1 \/ 1;}"
+      ],
+      "settings": {
+        "color_bg": "palette--light bg--neutral",
+        "grid": 3,
+        "rows": 3,
+        "width": "wrapper",
+        "padding_top": 40,
+        "padding_bottom": 36
+      }
+    },
+    "316824e6-6446-4ed6-853d-b854f0232c69": {
+      "type": "section-liquid",
+      "custom_css": [
+        "ul {list-style: none; display: flex; margin: 0 auto 10px; justify-content: center; border-block-end: 2px solid #fff1e6; font-weight: 700; margin-block: 50px 30px;}",
+        ".active {border-block-end: 3px solid #ec5306; color: #ec5306;}",
+        "li {font-size: 18px; text-transform: uppercase; margin: 10px 15px;}",
+        "a {padding: 4px 20px;}",
+        "@media screen and (max-width: 699px) {{display: none; } li {font-size: 14px; margin: 0 10px; } a {padding: 2px 10px; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<ul class=\"product-slider-menu\" style=\"padding:0\">\n\n<li><a class=\"active\" href=\"\" data-value=\".fine-art\">\nFine Art<\/a><\/li>\n<li><a href=\"\"  data-value=\".illustrations\">\nIllustrations<\/a><\/li>\n<li><a href=\"\" data-value=\".other\">\nOther<\/a><\/li>\n\n<\/ul>\n<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/3.6.0\/jquery.min.js\"><\/script>\n<script >\n    jQuery( document ).ready(function() {\n$('.illustrations').addClass('hide-slider');  \n$('.other').addClass('hide-slider');\n});\n$('ul.product-slider-menu li a').click(function(){$('ul.product-slider-menu li a').removeClass('active'); $(this).addClass('active');var data = $(this).attr(\"data-value\"); $('.section-collection').addClass('hide-slider');\n$(data).removeClass('hide-slider');\nconsole.log(data);\nreturn false;\n});\n<\/script>"
+      }
+    },
+    "07606153-a248-4288-a5b7-b0175735d51c": {
+      "type": "section-collection",
+      "custom_css": [
+        ".hide-slider {height: 0;}",
+        "h2 {text-transform: uppercase;}",
+        ".custom-scrollbar {display: none !important;}",
+        ".btn {background-color: #ec5306; text-transform: uppercase;}",
+        "@media screen and (min-width: 700px) {h2 {display: none; }}",
+        "@media screen and (max-width: 699px) {.hide-slider {height: fit-content; } .h3 {padding: 10px; color: #ec5306; }}"
+      ],
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "description": "",
+        "section-class": "fine-art",
+        "collection": "fine-art",
+        "grid": 2,
+        "limit": 2,
+        "enable_slider": true,
+        "color_bg": "palette--light bg--neutral",
+        "show_view_all": true,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "04537efd-3d9c-4d8b-bc49-c3a4c9b1dfde": {
+      "type": "section-collection",
+      "custom_css": [
+        ".hide-slider {height: 0;}",
+        "h2 {text-transform: uppercase;}",
+        ".custom-scrollbar {display: none !important;}",
+        ".btn {background-color: #ec5306; text-transform: uppercase;}",
+        "@media screen and (min-width: 700px) {h2 {display: none; }}",
+        "@media screen and (max-width: 699px) {.hide-slider {height: fit-content; } .h3 {padding: 10px; color: #ec5306; }}"
+      ],
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "description": "",
+        "section-class": "illustrations",
+        "collection": "illustrations",
+        "grid": 2,
+        "limit": 2,
+        "enable_slider": true,
+        "color_bg": "palette--light bg--neutral",
+        "show_view_all": true,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3f5b5345-0b5d-4b6d-a412-cc9509d2fc48": {
+      "type": "section-collection",
+      "custom_css": [
+        ".hide-slider {height: 0;}",
+        "h2 {text-transform: uppercase;}",
+        ".custom-scrollbar {display: none !important;}",
+        ".btn {background-color: #ec5306; text-transform: uppercase;}",
+        "@media screen and (min-width: 700px) {h2 {display: none; }}",
+        "@media screen and (max-width: 699px) {.hide-slider {height: fit-content; } .h3 {padding: 10px; color: #ec5306; }}"
+      ],
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "description": "",
+        "section-class": "other",
+        "collection": "original-paintings",
+        "grid": 2,
+        "limit": 2,
+        "enable_slider": true,
+        "color_bg": "palette--light bg--neutral",
+        "show_view_all": true,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "dc275076-744f-4fa9-988d-8ef0bed35f2f": {
+      "type": "section-text",
+      "blocks": {
+        "template--19371654545699__dc275076-744f-4fa9-988d-8ef0bed35f2f-16866613577274d4bd-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Frequently Asked Questions<\/h2>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--19371654545699__dc275076-744f-4fa9-988d-8ef0bed35f2f-16866613577274d4bd-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px;}",
+        ".text__standard {width: fit-content; margin: 3px 0;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "198d8127-eb04-44d0-8ff9-ffa6035e72ac": {
+      "type": "section-accordion",
+      "blocks": {
+        "template--19371654545699__198d8127-eb04-44d0-8ff9-ffa6035e72ac-1686661343ef093077-0": {
+          "type": "text",
+          "settings": {
+            "title": "What is the difference between lorem and ipsum?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        },
+        "template--19371654545699__198d8127-eb04-44d0-8ff9-ffa6035e72ac-1686661343ef093077-1": {
+          "type": "text",
+          "settings": {
+            "title": "Why is ipsum good for me?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        },
+        "template--19371654545699__198d8127-eb04-44d0-8ff9-ffa6035e72ac-1686661343ef093077-2": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer free returns?",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19371654545699__198d8127-eb04-44d0-8ff9-ffa6035e72ac-1686661343ef093077-0",
+        "template--19371654545699__198d8127-eb04-44d0-8ff9-ffa6035e72ac-1686661343ef093077-1",
+        "template--19371654545699__198d8127-eb04-44d0-8ff9-ffa6035e72ac-1686661343ef093077-2"
+      ],
+      "custom_css": [
+        ".accordion__wrapper {border-bottom: 1px solid #ec5306; border-top: none;}",
+        ".accordion__title {font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b9ced9f9-83f8-427d-8cb3-a688af5b1970": {
+      "type": "section-icons",
+      "blocks": {
+        "template--19371654545699__b9ced9f9-83f8-427d-8cb3-a688af5b1970-1687528477f1d365b2-0": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-earth",
+            "icon_color": "#ffffff",
+            "title": "Global Shipping",
+            "text": ""
+          }
+        },
+        "template--19371654545699__b9ced9f9-83f8-427d-8cb3-a688af5b1970-1687528477f1d365b2-1": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-basket-return",
+            "icon_color": "#ffffff",
+            "title": "Flexible Returns",
+            "text": ""
+          }
+        },
+        "template--19371654545699__b9ced9f9-83f8-427d-8cb3-a688af5b1970-1687528477f1d365b2-2": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-lock-shield",
+            "icon_color": "#ffffff",
+            "title": "Secure Checkout",
+            "text": ""
+          }
+        },
+        "template--19371654545699__b9ced9f9-83f8-427d-8cb3-a688af5b1970-1687528477f1d365b2-3": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-phone",
+            "icon_color": "#ffffff",
+            "title": "Dedicated support",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19371654545699__b9ced9f9-83f8-427d-8cb3-a688af5b1970-1687528477f1d365b2-0",
+        "template--19371654545699__b9ced9f9-83f8-427d-8cb3-a688af5b1970-1687528477f1d365b2-1",
+        "template--19371654545699__b9ced9f9-83f8-427d-8cb3-a688af5b1970-1687528477f1d365b2-2",
+        "template--19371654545699__b9ced9f9-83f8-427d-8cb3-a688af5b1970-1687528477f1d365b2-3"
+      ],
+      "custom_css": [
+        "* {background-color: #ec5306; color: #fff;}",
+        ".wrapper {padding-block: 0 10px;}",
+        ".icon__column {padding-block: 16px;}",
+        ".icon__column__icon {margin-block: 0;}"
+      ],
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "icon_size": "icon--medium",
+        "alignment": "text-center",
+        "grid": 4,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "3877cf02-89cb-4f4f-b44d-67c74b1ea331",
+    "main",
+    "316824e6-6446-4ed6-853d-b854f0232c69",
+    "07606153-a248-4288-a5b7-b0175735d51c",
+    "04537efd-3d9c-4d8b-bc49-c3a4c9b1dfde",
+    "3f5b5345-0b5d-4b6d-a412-cc9509d2fc48",
+    "dc275076-744f-4fa9-988d-8ef0bed35f2f",
+    "198d8127-eb04-44d0-8ff9-ffa6035e72ac",
+    "b9ced9f9-83f8-427d-8cb3-a688af5b1970"
+  ]
+}

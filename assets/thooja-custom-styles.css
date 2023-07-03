@@ -1,0 +1,275 @@
+/**
+* Thooja Custom Styles
+* https://thooja.com
+* We help grow sustainable ecommerce brands on Shopify
+*/
+
+/* Add the Thooja icon to the copyright text in the footer */
+.thooja_icon {
+	padding-left: 25px;
+	background: transparent url('https://cdn.shopify.com/s/files/1/0765/9887/0317/files/thooja-icon-footer.png?v=1685340151') no-repeat 1px 2px;
+	background-size: 20px; 
+	line-height: 25px; 
+	height: 25px; 
+	display: inline-block;
+}
+
+/* Custom font */
+@font-face {
+  font-family: 'Outfit-SemiBold';
+  src: url(https://cdn.shopify.com/s/files/1/0722/9361/3859/files/Outfit-SemiBold.woff2?v=1686126697) format('woff2');
+}
+@font-face {
+  font-family: 'Outfit-Regular';
+    src: url(https://cdn.shopify.com/s/files/1/0722/9361/3859/files/Outfit-Regular.woff2?v=1686126697) format('woff2');
+}
+
+body,
+input,
+textarea,
+button,
+select, a, span {
+  font-family: 'Outfit-Regular';
+}
+
+.uppercase, .popout--toolbar .popout-list__option, .popout--drawer .popout-list__option, .popout--footer .popout-list__option, .popout__toggle {
+  font-family: 'Outfit-Regular';
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Outfit-SemiBold';
+}
+
+.h1--body,
+.h2--body,
+.h3--body,
+.h4--body,
+.h5--body,
+.h6--body,
+.custom-form__label {
+  font-family: 'Outfit-SemiBold';
+}
+/* buttons  */
+
+.btn, .shopify-payment-button .shopify-payment-button__button--unbranded, .product__form__outer:not(.product__form--buybutton) .product__submit__add,
+.btn--soft,
+.product__form--buybutton .product__submit__add,
+.btn--outline {
+  border-radius: 6px;
+  padding: 14px 40px;
+  font-weight: 700;
+}
+
+/* Footer colour */
+
+.footer, .subfooter {
+  background-color: #EBEBEB;
+}
+
+/* Rich text underline */
+/* #shopify-section-template--18382273380643__bdbb560e-5727-4f09-aa28-e786e8281e5c > section > div > div > div > h2::after { */
+ section > div > div > div > h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  position: relative;
+}
+section > div > div > div > h2::after {
+  content: "";
+  height: 3px;
+  width: 130px;
+  background: #ec5306;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 65px);
+} 
+
+div > div > div > div.section-collection__inner > div.section-collection__head > h2 {
+    text-align: center;
+  padding-bottom: 1rem;
+  padding-inline: 0;
+  position: relative;
+  border-bottom: solid 1px #F7BA9B;
+  border-bottom-style: inset;
+}
+div > div > div > div.section-collection__inner > div.section-collection__head > h2::after {
+ content: "";
+  height: 3px;
+  width: 130px;
+  background: #ec5306;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 65px);
+}
+
+.h2.standard__heading heading-size-15 {
+  text-align: center;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.h2.standard__heading heading-size-15::after {
+
+  content: "";
+  height: 3px;
+  width: 130px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 65px);
+}
+
+
+
+
+.navlink--toplevel:after {
+/* ---------------------------------------------- to create icons in header requires additinoal code ---------------------------------------------- */
+}
+
+.accordion__heading, .overlap__content__wrapper > h2.h3
+{
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.accordion__heading::after, .overlap__content__wrapper > h2.h3:after {
+  content: "";
+  height: 3px;
+  width: 130px;
+  background: #ec5306;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+} 
+
+@media screen and (max-width: 699px) {
+  .accordion__heading::after, .overlap__content__wrapper > h2.h3:after {
+    left: calc(50% - 65px);
+  }
+}
+
+.btn--neutral {
+  background-color: #ec5306;
+}
+
+/* Icons background remove */
+
+.icon__column__icon:not(.icon__column__icon--custom):after {
+  opacity: 0;
+}
+
+/* Accordion icon change */
+
+.accordion__title:after {
+  width: 14px;
+  height: 14px;
+  border-width: 0 0 2px 2px;
+  border-style: solid;
+  border-color: #EC5306;
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+  transition: all 0.4s;
+}
+.accordion__title.accordion-is-open:after {
+  transform: rotate(135deg);
+}
+.accordion__title .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+/* Form legal  */
+.form__legal p {
+  font-style: normal;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Policy page width  */
+
+.shopify-policy__container {
+  max-width: unset !important;
+  margin: 0;
+  width: clamp(320px, 95%, 1248px);
+}
+
+/* Judge.me styling edits */
+
+.jdgm-carousel--aligned-theme,
+.jdgm-carousel-wrapper {
+  width: clamp(300px, 90%, 1600px) !important;
+  margin: 0 auto !important;
+}
+
+.jdgm-row-stars {
+  justify-content: space-between !important;
+}
+
+.jdgm-write-rev-link {
+  border-radius: 6px !important;
+}
+.jdgm-carousel-item__product-image {
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 40px !important;
+}
+
+.jdgm-subtab,
+.jdgm-rev-widg__sort-wrapper,
+.jdgm-branding-footer {
+  display: none;
+}
+
+/* Footer build  */
+
+
+.custom-footer-social > a {
+  margin: 0 5px;
+}
+.newsletter-script {
+ display: flex;
+  width: max-content;
+  gap: 10px;
+}
+.newsletter-script > svg {
+  margin-block: 20px 16px;
+}
+
+@media screen and (max-width: 699px){
+.footer__addition {
+  margin-top: 30px;
+  }
+.newsletter-script {
+  margin:0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 767px)
+  {
+.grid.flickity-disabled-mobile .small--one-half, .flickity-disabled-mobile.grid--full .small--one-half, .frame .has-padding .gallery .small--one-half {
+  width: 92%;
+    
+  }
+}
+
+.input-group .input-group-field {
+  width: 90%;
+}
+
+/* Flickity collection sections fix */
+
+.flickity-viewport {
+  width: 100%;
+}
+
+/* Header menu speed */
+
+.no-js .navlink--toplevel:focus + .header__dropdown,
+.no-js .navlink--toplevel:focus-within + .header__dropdown {
+   transition-delay: 0.5s ;
+transition: all 5s ease;
+}
+

@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "customer-login",
+      "custom_css": [
+        "label {font-size: 22px; font-weight: 700;}",
+        "h1 {font-size: 48px;}",
+        "p {text-align: center;}",
+        "a {color: #ec5306;}",
+        "p:last-of-type {text-align: left;}",
+        ".btn {background-color: #ec5306; text-transform: uppercase; margin-top: 20px;}",
+        "button {border: 1px solid #ec5306; text-transform: uppercase; color: #ec5306; border-radius: 6px; width: 100%; padding-block: 14px; font-weight: 700;}",
+        "@media screen and (max-width: 699px) {h1 {font-size: 32px; } label {font-size: 18px; }}"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

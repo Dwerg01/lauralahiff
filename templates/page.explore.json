@@ -1,0 +1,275 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-default",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "show_content": true,
+        "alignment": "text-left",
+        "page_nav": "",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4ca963c2-f3c3-4648-bcca-6cb1cf6ac389": {
+      "type": "section-row",
+      "custom_css": [
+        ".wrapper {max-width: unset; padding: 0 0 40px 0;}",
+        ".overlap__item {margin: 0; max-height: 656px; overflow: hidden;}",
+        "h2 {font-size: 48px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 32px; } {text-align: center; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "right",
+        "title": "Explore",
+        "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f908647e-a354-4e03-ba2d-cee4caf4a616": {
+      "type": "section-row",
+      "custom_css": [
+        ".overlap__item {background-color: #fff;}",
+        "h2 {font-size: 32px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "left",
+        "title": "About",
+        "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "LEARN MORE",
+        "button_link": "shopify:\/\/pages\/about",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2fdeb7ab-6ec0-4d93-b397-4fdb7e0d4c5f": {
+      "type": "section-row",
+      "custom_css": [
+        ".overlap__item {background-color: #fff;}",
+        "h2 {font-size: 32px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "right",
+        "title": "Sustainability",
+        "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "LEARN MORE",
+        "button_link": "shopify:\/\/products\/equinox-art-print",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f3dfdb73-d164-41f5-983b-eea050a838a4": {
+      "type": "section-row",
+      "custom_css": [
+        ".overlap__item {background-color: #fff;}",
+        "h2 {font-size: 32px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "left",
+        "title": "Carbon footprint",
+        "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "LEARN MORE",
+        "button_link": "shopify:\/\/blogs\/discover-more\/blog-title-2",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3013e57d-39ca-4821-aff5-ca1e4584431c": {
+      "type": "section-row",
+      "custom_css": [
+        ".overlap__item {background-color: #fff;}",
+        "h2 {font-size: 32px;}",
+        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "right",
+        "title": "My Other Work in Sustainability",
+        "text": "<p>Aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor. aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "LEARN MORE",
+        "button_link": "shopify:\/\/blogs\/discover-more",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e142f974-105a-4845-b291-a410cbbe85a9": {
+      "type": "section-text",
+      "blocks": {
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Discover more<\/h2>",
+            "text_size": 9
+          }
+        },
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-1",
+        "template--19315093438755__e142f974-105a-4845-b291-a410cbbe85a9-1686206244616fa2e4-2"
+      ],
+      "custom_css": [
+        "* {font-family: \"Outfit-Regular\";}",
+        "h2,p {color: white;}",
+        "h2 {margin: 76px 0 32px 0;}",
+        "p {font-size: 16px; max-width: 510px; margin: auto;}",
+        "h2::after {background: #fff;}",
+        "@media screen and (max-width: 699px) {a {margin: 40px 0; } h2 {margin: 40px 0 30px; }}"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "color_bg": "palette--dark bg--invert--accent",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d80378a3-cf74-4143-8d19-8685f5aaf255": {
+      "type": "section-text",
+      "blocks": {
+        "1b9f70a7-3461-47f4-9d60-4c154a701a88": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "<p>Name of the Blog<\/p>",
+            "enable_caps": false,
+            "text_size": 5
+          }
+        },
+        "affc866d-20f7-4afc-992f-873d61089cc2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus...<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "2a9b0a05-4449-4614-a805-4505fdf9402e": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "<p>Name of the Blog<\/p>",
+            "enable_caps": false,
+            "text_size": 5
+          }
+        },
+        "97d308c0-67cf-49ea-a6ef-dac55c0c518b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus...<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "c2a6e5e1-2cab-40f1-937a-ac82dea533a2": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "<p>Name of the Blog<\/p>",
+            "enable_caps": false,
+            "text_size": 5
+          }
+        },
+        "49ea57c3-729e-4566-939c-f7bd4aba97ba": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus...<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "637f57fa-e2be-468a-8600-53db4cb591b8": {
+          "type": "button",
+          "settings": {
+            "button_text": "VIEW ALL BLOG POSTS",
+            "button_url": "shopify:\/\/blogs\/discover-more",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn--soft",
+            "button_color": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "1b9f70a7-3461-47f4-9d60-4c154a701a88",
+        "affc866d-20f7-4afc-992f-873d61089cc2",
+        "2a9b0a05-4449-4614-a805-4505fdf9402e",
+        "97d308c0-67cf-49ea-a6ef-dac55c0c518b",
+        "c2a6e5e1-2cab-40f1-937a-ac82dea533a2",
+        "49ea57c3-729e-4566-939c-f7bd4aba97ba",
+        "637f57fa-e2be-468a-8600-53db4cb591b8"
+      ],
+      "custom_css": [
+        "* {font-family: \"Outfit-Regular\"; text-align: left;}",
+        "p {color: white;}",
+        ".caps-false {font-size: 22px; border-bottom: 1px solid white; font-weight: 600;}",
+        ".standard__rte {font-size: 16px;}",
+        "a {margin: 76px 0; align-self: center; font-size: 14px; font-weight: 700; background-color: white; color: #1d519c;}",
+        "@media screen and (max-width: 699px) {a {margin: 40px 0; } .caps-false {font-size: 18px; } .wrapper {padding: 32px; }}"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "color_bg": "palette--dark bg--invert--accent",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4ca963c2-f3c3-4648-bcca-6cb1cf6ac389",
+    "f908647e-a354-4e03-ba2d-cee4caf4a616",
+    "2fdeb7ab-6ec0-4d93-b397-4fdb7e0d4c5f",
+    "f3dfdb73-d164-41f5-983b-eea050a838a4",
+    "3013e57d-39ca-4821-aff5-ca1e4584431c",
+    "e142f974-105a-4845-b291-a410cbbe85a9",
+    "d80378a3-cf74-4143-8d19-8685f5aaf255"
+  ]
+}

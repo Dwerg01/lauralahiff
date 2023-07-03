@@ -1,0 +1,48 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "custom_css": [
+        ".wrapper {border-top: 2px solid #1f1f1f;}",
+        "ul {text-align: left;}",
+        "h1 {font-size: 22px;}",
+        ".icon {color: #ec5306;}",
+        "h5,.footer__logo__text {text-transform: uppercase; font-size: 14px;}",
+        ".input-group {border: 1px solid #ec5306; padding: 0; border-radius: 0 10px 10px 0; max-width: 400px;}",
+        ".btn--soft {background: #ec5306; color: #fff;}",
+        "@media screen and (max-width: 699px) {.grid__item:has(.site-logo) {display: none; } .custom__flex, ul {flex-direction: column; text-align: center; } h1 {font-size: 18px; } .input-group, {margin: auto; }}"
+      ],
+      "settings": {
+        "logo_max_width": 250,
+        "footer_description": "<p>Laura Lahiff is an independent, female-founded label dedicated to creating luxury-grade quality prints. Thanks to Laura Lahiff for allowing us to use their photography and products in this demo store.<br\/><br\/><a href=\"\/pages\/about\" title=\"About\">Learn More<\/a><\/p>",
+        "footer_linklist": "shop-art",
+        "footer_second_linklist": "footer",
+        "width": "wrapper",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "subfooter": {
+      "type": "subfooter",
+      "custom_css": [
+        ".icon {color: #ec5306;}"
+      ],
+      "settings": {
+        "footer_social_enable": false,
+        "footer_payment_enable": true,
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "currency_select_type": "country",
+        "width": "wrapper",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "subfooter"
+  ]
+}

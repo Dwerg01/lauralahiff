@@ -1,0 +1,399 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": 12,
+            "product_show_vendor": false,
+            "product_show_cutline": false,
+            "show_rating": true,
+            "show_rating_count": false
+          }
+        },
+        "siblings": {
+          "type": "siblings",
+          "disabled": true,
+          "settings": {
+            "siblings_collection": "",
+            "cutline": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "read_more": true,
+            "style": "accordions",
+            "description_icon": "",
+            "title_1": "",
+            "icon_name_1": "",
+            "raw_content_1": "",
+            "title_2": "",
+            "icon_name_2": "",
+            "raw_content_2": "",
+            "title_3": "",
+            "icon_name_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "icon_name_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": ""
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "variant_form": "dropdown",
+            "show_quantity": true,
+            "show_remaining": false,
+            "enable_payment_button": false,
+            "subscriptions_enable_selectors": false,
+            "info_page": ""
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-recycled",
+            "icon_color": "#5d9386",
+            "text": "<p>Made with recycled fabrics<\/p>"
+          }
+        },
+        "icon-2": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-sewing-machine",
+            "icon_color": "#5d9386",
+            "text": "<p>Certified fair trade product<\/p>"
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "product": ""
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+            "share_label": "SHARE"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "siblings",
+        "description",
+        "form",
+        "icon-1",
+        "icon-2",
+        "upsell",
+        "pickup",
+        "sharing"
+      ],
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "width": "wrapper",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "929fa99d-69e8-4f6c-a948-9636cd24e1ee": {
+      "type": "section-accordion",
+      "blocks": {
+        "template--19329479770403__929fa99d-69e8-4f6c-a948-9636cd24e1ee-1686302501398f6b53-0": {
+          "type": "text",
+          "settings": {
+            "title": "Details",
+            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+          }
+        },
+        "template--19329479770403__929fa99d-69e8-4f6c-a948-9636cd24e1ee-1686302501398f6b53-1": {
+          "type": "text",
+          "settings": {
+            "title": "Sustainability",
+            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+          }
+        },
+        "template--19329479770403__929fa99d-69e8-4f6c-a948-9636cd24e1ee-1686302501398f6b53-2": {
+          "type": "text",
+          "settings": {
+            "title": "Care guide",
+            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+          }
+        },
+        "243bd7c4-0b0e-4f11-a126-755f7be3536f": {
+          "type": "text",
+          "settings": {
+            "title": "Packaging",
+            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+          }
+        },
+        "d6383d31-78fb-4b7e-bb5b-3913c214e693": {
+          "type": "text",
+          "settings": {
+            "title": "Delivery & Returns",
+            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479770403__929fa99d-69e8-4f6c-a948-9636cd24e1ee-1686302501398f6b53-0",
+        "template--19329479770403__929fa99d-69e8-4f6c-a948-9636cd24e1ee-1686302501398f6b53-1",
+        "template--19329479770403__929fa99d-69e8-4f6c-a948-9636cd24e1ee-1686302501398f6b53-2",
+        "243bd7c4-0b0e-4f11-a126-755f7be3536f",
+        "d6383d31-78fb-4b7e-bb5b-3913c214e693"
+      ],
+      "custom_css": [
+        ".accordion__wrapper {border-bottom: 1px solid #ec5306; border-top: none; padding-block: 11px;}",
+        ".accordion__title {font-size: 12px; text-transform: uppercase; font-weight: 700;}",
+        "p {font-size: 14px;}",
+        "@media screen and (max-width: 699px) {.accordion__wrapper {padding-block: 5px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "text-left",
+        "text_size": 1,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5fdf5365-16f3-48b4-89a4-bae7369e53c0": {
+      "type": "section-text",
+      "blocks": {
+        "92e850f9-0ea6-49c8-83e9-b7d7668db1d3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Related Blog Excerpt<\/h2>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "92e850f9-0ea6-49c8-83e9-b7d7668db1d3"
+      ],
+      "custom_css": [
+        "* {background-color: #fff1e6; text-align: left;}",
+        ".btn--outline {font-size: 14px; font-family: \"Outfit-SemiBold\";}",
+        "h2:after {left: 70px;}",
+        ".overlap__content__wrapper {max-width: 360px;}",
+        "@media screen and (max-width: 699px) {* {background-color: #fff; text-align: center; } h2:after {left: calc(50% - 65px); }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-right": {
+      "type": "section-row",
+      "custom_css": [
+        ".palette--light,.overlap__item {background-color: #fff1e6; text-align: center;}",
+        "h2::after {background-color: transparent;}",
+        "a {background-color: #fff;}",
+        "@media screen and (max-width: 699px) {.palette--light, .overlap__item {background-color: #fff !important; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/productimage1.png",
+        "aspect_ratio": 1,
+        "layout": "left",
+        "title": "Blog Title",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "color_text_bg": "palette--light bg--neutral",
+        "button_label": "READ MORE",
+        "button_link": "shopify:\/\/blogs\/discover-more",
+        "button_style": "btn--outline",
+        "button_color": "btn--primary",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "judgeme_section_review_widget_9447": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_61ad590e": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_61ad590e"
+      ],
+      "settings": {
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "judgeme_section_review_widget_ee95": {
+      "type": "apps",
+      "blocks": {
+        "631a2d29-a9a8-4b3d-be45-bbd9ea00bdff": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/all_reviews_page\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "extra_wrapper_classes": "page-width page-width--narrow"
+          }
+        },
+        "bc449712-cb26-49df-888d-85834b9f857b": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/medals\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "631a2d29-a9a8-4b3d-be45-bbd9ea00bdff",
+        "bc449712-cb26-49df-888d-85834b9f857b"
+      ],
+      "settings": {
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "recent": {
+      "type": "section-recent-products",
+      "settings": {
+        "product_recently_heading": "Recently viewed",
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3b755f23-888c-4a88-8306-8606dbfea1dd": {
+      "type": "section-text",
+      "blocks": {
+        "template--19329479770403__3b755f23-888c-4a88-8306-8606dbfea1dd-16862993926571e8e2-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>You May Also Enjoy...<\/h2>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479770403__3b755f23-888c-4a88-8306-8606dbfea1dd-16862993926571e8e2-1"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related": {
+      "type": "related",
+      "settings": {
+        "related_products_enable": true,
+        "limit": 3,
+        "product_recommendations_heading": "",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c7852239-0dad-467b-9d1a-aec5f0a35834": {
+      "type": "section-icons",
+      "blocks": {
+        "template--19329479770403__c7852239-0dad-467b-9d1a-aec5f0a35834-168629902534407a76-0": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-earth",
+            "icon_color": "#ffffff",
+            "title": "Global Shipping",
+            "text": ""
+          }
+        },
+        "template--19329479770403__c7852239-0dad-467b-9d1a-aec5f0a35834-168629902534407a76-1": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-basket-return",
+            "icon_color": "#ffffff",
+            "title": "Flexible Returns",
+            "text": ""
+          }
+        },
+        "template--19329479770403__c7852239-0dad-467b-9d1a-aec5f0a35834-168629902534407a76-2": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-lock-shield",
+            "icon_color": "#ffffff",
+            "title": "Secure Checkout",
+            "text": ""
+          }
+        },
+        "template--19329479770403__c7852239-0dad-467b-9d1a-aec5f0a35834-168629902534407a76-3": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-phone",
+            "icon_color": "#ffffff",
+            "title": "Dedicated support",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479770403__c7852239-0dad-467b-9d1a-aec5f0a35834-168629902534407a76-0",
+        "template--19329479770403__c7852239-0dad-467b-9d1a-aec5f0a35834-168629902534407a76-1",
+        "template--19329479770403__c7852239-0dad-467b-9d1a-aec5f0a35834-168629902534407a76-2",
+        "template--19329479770403__c7852239-0dad-467b-9d1a-aec5f0a35834-168629902534407a76-3"
+      ],
+      "custom_css": [
+        "* {background-color: #ec5306; color: #fff;}",
+        ".wrapper {padding-block: 0 10px;}",
+        ".icon__column {padding-block: 16px;}",
+        ".icon__column__icon {margin-block: 0;}"
+      ],
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "icon_size": "icon--medium",
+        "alignment": "text-center",
+        "grid": 4,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "929fa99d-69e8-4f6c-a948-9636cd24e1ee",
+    "5fdf5365-16f3-48b4-89a4-bae7369e53c0",
+    "image-right",
+    "judgeme_section_review_widget_9447",
+    "judgeme_section_review_widget_ee95",
+    "recent",
+    "3b755f23-888c-4a88-8306-8606dbfea1dd",
+    "related",
+    "c7852239-0dad-467b-9d1a-aec5f0a35834"
+  ]
+}

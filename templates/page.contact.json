@@ -1,0 +1,246 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-default",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "show_content": true,
+        "alignment": "text-left",
+        "page_nav": "",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2cea2a7a-3041-4280-a670-aa6479d5c9e6": {
+      "type": "section-text",
+      "blocks": {
+        "91327a2b-cc33-4021-8954-d979ec8af538": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>Let's Connect<\/h1>",
+            "text_size": 11
+          }
+        },
+        "template--19329479508259__2cea2a7a-3041-4280-a670-aa6479d5c9e6-16862861222dec0264-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Here to Help<\/h2>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "91327a2b-cc33-4021-8954-d979ec8af538",
+        "template--19329479508259__2cea2a7a-3041-4280-a670-aa6479d5c9e6-16862861222dec0264-1"
+      ],
+      "custom_css": [
+        "h1 {font-weight: 700; font-size: 48px; text-align: center; margin-bottom: 72px;}",
+        "@media screen and (max-width: 699px) {h1 {font-size: 32px; margin-bottom: 48px; }}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact": {
+      "type": "section-contact",
+      "blocks": {
+        "form_element_1": {
+          "type": "text",
+          "settings": {
+            "title": "Full Name"
+          }
+        },
+        "form_element_2": {
+          "type": "email",
+          "settings": {
+            "title": "Email"
+          }
+        },
+        "form_element_3": {
+          "type": "body",
+          "settings": {
+            "title": "Message"
+          }
+        }
+      },
+      "block_order": [
+        "form_element_1",
+        "form_element_2",
+        "form_element_3"
+      ],
+      "custom_css": [
+        ".contact__form {max-width: 540px; margin: auto;}",
+        "h2,label,p {font-size: 16px; font-family: \"Outfit-Regular\";}",
+        ".btn--half {background-color: #ef5d08; width: 100%; margin-top: 56px;}",
+        "a {color: #ef5d08;}",
+        "lable {font-family: \"Outfit-SemiBold\";}"
+      ],
+      "settings": {
+        "title": "* Required information",
+        "accordion_title": "Frequently asked questions",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16862928514e92488f": {
+      "type": "apps",
+      "blocks": {
+        "c034ab5c-a571-4fa7-9353-bc7cec0cb2ff": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/9d35f684-f743-45ca-9cc2-c5409bb241a8",
+          "settings": {
+            "heading": "",
+            "feeds_type": "CUSTOM"
+          }
+        }
+      },
+      "block_order": [
+        "c034ab5c-a571-4fa7-9353-bc7cec0cb2ff"
+      ],
+      "settings": {
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5a25401a-8808-478e-8866-d198c8852ce9": {
+      "type": "section-text",
+      "blocks": {
+        "template--19329479508259__5a25401a-8808-478e-8866-d198c8852ce9-1686318946e09872d5-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Join the Newsletter<\/h2>",
+            "text_size": 9
+          }
+        },
+        "819890f7-1d3a-4689-97c5-dd2a5500171d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get exclusive content, new podcast announcements, special downloads, artist tips, and more sent to your inbox every two weeks!<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "0aaa5418-15d4-45e8-b18f-42e3bb75b8f5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479508259__5a25401a-8808-478e-8866-d198c8852ce9-1686318946e09872d5-1",
+        "819890f7-1d3a-4689-97c5-dd2a5500171d",
+        "0aaa5418-15d4-45e8-b18f-42e3bb75b8f5"
+      ],
+      "custom_css": [
+        "p {max-width: 414px; margin: 26px auto; text-align: center;}",
+        "h2 {margin-bottom: 48px;}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "default-newsletter": {
+      "type": "section-newsletter",
+      "custom_css": [
+        ".newsletter__content,.newsletter__wrapper {margin: 0 auto; padding: 0; line-height: 0; background: #fff;}",
+        ".wrapper {height: 0; padding: 0 0 40px 00; margin: 0 auto;}",
+        ".newsletter__button {bottom: 25px;}",
+        ".newsletter-form {width: clamp(320px, 100%, 414px); margin: auto; border: 2px solid #ec5306; padding: 0; border-radius: 0 12px 12px 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "richtext": "",
+        "success": "Success! Use code CLUB10 to save 10%",
+        "text_color": "text--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "button_color": "btn--neutral",
+        "button_style": "btn",
+        "width": "wrapper",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "b9f388a6-8a29-4516-ae05-95500c066e95": {
+      "type": "section-text",
+      "disabled": true,
+      "blocks": {
+        "template--19329479508259__b9f388a6-8a29-4516-ae05-95500c066e95-1686318946e09872d5-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"\/pages\/contact\" title=\"Contact\">Customer service<\/a><\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "3e8b52f8-a80a-441b-882d-1ba467d9092f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>x@lauralahiff.com<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "977704c1-94b2-46d4-a1b1-e5e3c57b6aac": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"\/pages\/contact\" title=\"Contact\">Inquiries<\/a><\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        },
+        "06306e3f-f14b-43b1-9b79-d87ca1e73737": {
+          "type": "text",
+          "settings": {
+            "text": "<p>y@lauralahiff.com<\/p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479508259__b9f388a6-8a29-4516-ae05-95500c066e95-1686318946e09872d5-2",
+        "3e8b52f8-a80a-441b-882d-1ba467d9092f",
+        "977704c1-94b2-46d4-a1b1-e5e3c57b6aac",
+        "06306e3f-f14b-43b1-9b79-d87ca1e73737"
+      ],
+      "custom_css": [
+        ".standard__rte {width: 200px; width: max-content;}",
+        ".text-standard {display: flex; flex-direction: block;}",
+        "a {color: #ec5306;}"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "2cea2a7a-3041-4280-a670-aa6479d5c9e6",
+    "contact",
+    "16862928514e92488f",
+    "5a25401a-8808-478e-8866-d198c8852ce9",
+    "default-newsletter",
+    "b9f388a6-8a29-4516-ae05-95500c066e95"
+  ]
+}
