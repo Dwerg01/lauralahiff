@@ -1,6 +1,8 @@
 
 <div class="shopify-section section-section">
   <div class="wrapper posts">
+
+  <div class="search-bar"></div>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
     
@@ -31,7 +33,7 @@
       <h4 class="selector">Select year</h4>
     <div class="filter-selector-block">
       {% for i in (2021..2023) %}
-        <a class="yearButton"><p class="year-selector">{{ i }}</p></a>
+        <button href="#" class="year-button" data-year="{{ i }}">{{ i }}</button>
       {% endfor %}
     </div>
 </div>
@@ -39,7 +41,40 @@
 </div>
 
 {% javascript %}
-  const selector = document.querySelector(".custom-blog")
+  // const selector = document.querySelectorAll(".custom-blog");
+  // const selectorButtons = document.querySelectorAll(".year-button");
+  // const blogArticles = document.querySelectorAll(".custom-blog-article-link")
+
+
+  function setupFilterButtons() {
+  const filterButtons = document.querySelectorAll('.year-button');
+  const blocks = document.querySelectorAll('.custom-blog-article-link');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const filterValue = button.getAttribute('data-year');
+
+      // Show/hide blocks based on filter value
+      blocks.forEach(block => {
+        if (block.getAttribute('data-year') === filterValue) {
+          block.style.color = 'black';
+        } else {
+          block.style.color = '#ccc';
+        }
+      });
+
+      // Toggle active class on clicked button
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+    });
+  });
+}
+
+// Call the function to set up filter buttons
+setupFilterButtons();
+
 
 {% endjavascript %}
 
@@ -49,9 +84,17 @@
   --custom-margin : 36px;
   }
 
+  .search-bar {
+    background-color: #1D519C;
+    height: 50px;
+    width: 100%;
+  }
   .selector-wrapper {
     
     background-color: #DAE9FD;
+  }
+  .filtered {
+    border: 3px solid red;
   }
   .filter-selector-block {
     display: flex;
@@ -63,8 +106,8 @@
     text-transform: uppercase;
     
   }
-  .year-selector {
-    padding: 6px 16px;
+  .year-button {
+    padding: 6px 26px;
     border: 2px solid #1D519C;
     color: #1D519C;
     font-weight: 600;
@@ -79,6 +122,7 @@
     flex: 1 0 calc(50% - 2 * (var(--custom-margin)));
     flex-gap: var(--custom-margin);
     margin-inline: 36px;
+    margin-bottom: 72px;
     
   }
   .custom-blog-title {
@@ -111,8 +155,13 @@
     flex: 1 0 calc(100% - var(--custom-margin));
     margin-inline: 0;
   }
+  
+  .custom-blog:nth-child(4) {
+    display: none;
+  }
   .custom-blog-article {
-    padding: 14px 10px;}
+    padding: 14px 10px;
+  }
 }
 {% endstyle %}
 
