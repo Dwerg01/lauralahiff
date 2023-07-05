@@ -42,40 +42,74 @@
 <div class="filter-block">
       <h4 class="selector">Select year</h4>
     <div class="filter-selector-block">
-      {% for i in (2021..2023) %}
+      {% assign currentYear = "now" | date: "%Y" %}
+      {% for i in (2021..currentYear) %}
         <button href="#" class="year-button" data-year="{{ i }}">{{ i }}</button>
       {% endfor %}
     </div>
 </div>
- <div class="results-section">
-  <h3>{{ "now" | date: "%Y" }}</h3>
- </div>
+  <div class="results-section">
+    <h3 class="date-filter">{{ currentYear }}</h3>
+    {% for blog in blog-block.articles %}
+      <div class="year-article">
+        <div>{{ blog.publishedAt | date: "%Y" }}</div>
+        </div>
+      {% endfor %}
+  </div>
 </div>
 </div>
 
 {% javascript %}
-  // const selector = document.querySelectorAll(".custom-blog");
-  // const selectorButtons = document.querySelectorAll(".year-button");
-  // const blogArticles = document.querySelectorAll(".custom-blog-article-link")
-  const searchBar = document.querySelector("[data-search]")
-  let searchResults = []
-
-  searchBar.addEventListener("input", (e) => {
-    const value = e.target.value;
-    searchResults.forEach(blog => {
-      cosnt isVisible = blog.title.includes(value)
-      blog.element.classList.toggle("hide", !isVisible)
-    })
-  })
 
 
-  function setupFilterButtons() {
+
+function searchFunction() {
+  var input = document.getElementById('search');
+  var filter = input.value.toUpperCase();
+  var posts = document.getElementsByClassName('custom-blog');
+
+  for (var i = 0; i < posts.length; i++) {
+    var title = posts[i].getElementsByClassName('custom-blog-title')[0];
+    var articleLinks = posts[i].getElementsByClassName('custom-blog-article-link');
+
+    // Check if the title or any article contains the search filter
+    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+      posts[i].style.display = '';
+    } else {
+      var foundMatch = false;
+
+      for (var j = 0; j < articleLinks.length; j++) {
+        var article = articleLinks[j].getElementsByClassName('custom-blog-article')[0];
+        if (article.innerText.toUpperCase().indexOf(filter) > -1) {
+          foundMatch = true;
+          break;
+        }
+      }
+
+      if (foundMatch) {
+        posts[i].style.display = '';
+      } else {
+        posts[i].style.display = 'none';
+      }
+    }
+  }
+}
+
+// Bind the search function to the input's keyup event
+var searchInput = document.getElementById('search');
+searchInput.addEventListener('keyup', searchFunction);
+
+const filterDate = document.querySelector(".date-filter")
+
+function setupFilterButtons() {
   const filterButtons = document.querySelectorAll('.year-button');
   const blocks = document.querySelectorAll('.custom-blog-article-link');
 
   filterButtons.forEach(button => {
     button.addEventListener('click', function() {
       const filterValue = button.getAttribute('data-year');
+
+      filterDate.innerText = filterValue;
 
       // Show/hide blocks based on filter value
       blocks.forEach(block => {
@@ -115,6 +149,9 @@ setupFilterButtons();
   .wrapper.search > * {
     margin: 0;
   }
+  .wrapper.search::after {
+    display: none;
+  }
   .helper-text {
     color: white;
     text-transform: uppercase;
@@ -126,9 +163,10 @@ setupFilterButtons();
     width: 100%;
   }
   .selector-wrapper {
-    
     background-color: #DAE9FD;
+    margin-bottom: 0;
   }
+
   .filtered {
     border: 3px solid red;
   }
@@ -157,7 +195,7 @@ setupFilterButtons();
     flex-wrap: wrap;
   }
   .custom-blog {
-    flex: 1 0 calc(50% - 2 * (var(--custom-margin)));
+    flex: 0 1 calc(50% - 2 * (var(--custom-margin)));
     flex-gap: var(--custom-margin);
     margin-inline: 36px;
     margin-bottom: 72px;
