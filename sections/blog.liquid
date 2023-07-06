@@ -11,6 +11,7 @@
       </div>
     </div>
   </div>
+  <h2 class="custom-header wrapper">Articles by Topic</h2>
   <div class="wrapper posts">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -27,7 +28,7 @@
             </a>
           {%- endfor -%}
           <div class="read-more-box">
-            <a class="read-more-link" href="{{ blog-block.url }}">more about {{ blog-block.title }}</a>
+            <a class="read-more-link" href="#">more about {{ blog-block.title }}</a>
           </div>
         </div>
       {%- endcase -%}
@@ -46,21 +47,34 @@
       {% for i in (2021..currentYear) %}
         <button href="#" class="year-button" data-year="{{ i }}">{{ i }}</button>
       {% endfor %}
-    </div>
-</div>
+      </div>
+      </div>
   <div class="results-section">
-    <h3 class="date-filter">{{ currentYear }}</h3>
-    {% for blog in blog-block.articles %}
-      <div class="year-article">
-        <div>{{ blog.publishedAt | date: "%Y" }}</div>
-        </div>
-      {% endfor %}
+    {% liquid 
+        assign dateheader = '<h3 class="date-filter"></h3>'
+        assign selectedYear = 2023
+        assign blog_handles = "Sustainability,Art,About" | split: ","
+    %}
+    {{ dateheader }}
+      <p>{{ blog-block.title }}</p>
+ 
+
+        {% for article in blog-block.articles %}
+          {% assign publishedYear = article.published_at | date: "%Y" %}
+  
+            <div class="year-article">
+              <div>{{ article.published_at | date: "%m" }}</div>
+              <div>{{ article.title }}</div>
+            </div>
+            
+        {% endfor %}
+
   </div>
 </div>
 </div>
 
-{% javascript %}
 
+{% javascript %}
 
 
 function searchFunction() {
@@ -196,7 +210,7 @@ setupFilterButtons();
   }
   .custom-blog {
     flex: 0 1 calc(50% - 2 * (var(--custom-margin)));
-    flex-gap: var(--custom-margin);
+    column-gap: var(--custom-margin);
     margin-inline: 36px;
     margin-bottom: 72px;
     
