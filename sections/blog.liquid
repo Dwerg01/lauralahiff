@@ -55,16 +55,17 @@
         assign selectedYear = 2023
         assign blog_handles = "Sustainability,Art,About" | split: ","
     %}
-    {{ dateheader }}
-      <p>{{ blog-block.title }}</p>
- 
+    {{ dateheader }} 
 
         {% for article in blog-block.articles %}
           {% assign publishedYear = article.published_at | date: "%Y" %}
-  
-            <div class="year-article">
-              <div>{{ article.published_at | date: "%m" }}</div>
-              <div>{{ article.title }}</div>
+            
+            <div class="year-article-block">
+              <a class="year-article" href="{{article.url}}">
+              <div class="year-blog-month">{{ article.published_at | date: "%B" }}</div>
+              <div class="year-blog-title">{{ article.title }}</div>
+              <i class="fa-solid fa-chevron-right year-blog-icon accordion-title"></i>
+              </a>
             </div>
             
         {% endfor %}
@@ -155,6 +156,26 @@ setupFilterButtons();
   --custom-margin : 36px;
   }
 
+  .year-article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #1d519c;  
+  }
+  
+  .year-blog-month {
+    width: 105px;
+    font-size: 14px;
+    margin-block: 20px;
+  }
+  .year-blog-title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .year-blog-icon {
+    margin-left: auto;
+  }
   .wrapper.search {
     display: flex;
     justify-content: space-between;
@@ -227,6 +248,9 @@ setupFilterButtons();
     padding-bottom: 16px;
   }
   
+  .custom-blog-article {
+    font-weight: 600;
+  }
   .read-more-link {
     font-size: 14px;
     color: #1D519C;
@@ -237,7 +261,7 @@ setupFilterButtons();
     padding: 14px 40px;
     letter-spacing: 0.25px;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 40px 0 0;
   }
 
 
