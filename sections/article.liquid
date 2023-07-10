@@ -4,19 +4,16 @@
   When a comment is submitted, the browser is redirected to a page that includes
   the new comment id in its URL.
   #comments is a required ID and is used as an anchor link by Shopify.
-{% endcomment %}
-
-{%- assign number_of_comments = article.comments_count -%}
+{% endcomment %}{%- assign number_of_comments = article.comments_count -%}
 
 {% comment %}
   If a comment was just submitted but requires moderation, we have an extra comment to count.
-{% endcomment %}
-{% if comment and comment.status != 'published' %}
-  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endcomment %}{% if comment and comment.status != 'published' %}
+{% assign number_of_comments = article.comments_count | plus: 1 %}
 {% endif %}
 
 {% assign sidebar_enable = false %}
-{% if article.tags != blank and section.settings.sidebar_tags %}
+  {% if article.tags != blank and section.settings.sidebar_tags %}
   {% assign sidebar_enable = true %}
 {% elsif section.settings.recent %}
   {% assign sidebar_enable = true %}
@@ -31,8 +28,7 @@
   class="page-article {{ section.settings.color_bg }}"
   data-section-id="{{ section.id }}"
   data-section-type="article"
-  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
->
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
   <div class="{{ section.settings.width }} section-padding">
     <div class="grid">
       <div class="grid__item large-up--hide">
@@ -40,9 +36,8 @@
           {% for tag in blog.all_tags %}
             <li
               {% if article.tags contains tag %}
-                class="inline-nav--active"
-              {% endif %}
-            >
+              class="inline-nav--active"
+              {% endif %}>
               <a class="blog__tag" href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
             </li>
           {% endfor %}
@@ -54,7 +49,10 @@
           {%- assign img_url = article.image.src | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
           <div class="wide-image {{ section.settings.image_height }} article__image__feature" id="FeaturedImage-{{ section.id }}">
             {% if section.settings.image_height == 'use_image' %}
-              <div class="lazy-image" data-wipe-background style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%; background-image: url('{{ article.image | img_url: '1x1' }}');">
+              <div
+                class="lazy-image"
+                data-wipe-background
+                style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%; background-image: url('{{ article.image | img_url: '1x1' }}');">
                 <img
                   class="lazyload fade-in"
                   alt="{{ article.image.alt | default: article.title }}"
@@ -62,15 +60,17 @@
                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048, 2450, 2700, 3000, 3350, 3750, 4100]"
                   data-aspectratio="{{ article.image.aspect_ratio }}"
                   data-parent-fit="cover"
-                  data-sizes="auto"
-                >
+                  data-sizes="auto">
               </div>
             {% endif %}
             {% if section.settings.image_height != 'use_image' %}
               <div class="background-size-cover lazyload" data-bgset="{% render 'bgset', image: article.image %}"></div>
             {% endif %}
             <noscript>
-              <img src="{{ article.image | img_url: '720x' }}" alt="{{ article.image.alt | default: article.title }}" class="responsive-wide-image">
+              <img
+                src="{{ article.image | img_url: '720x' }}"
+                alt="{{ article.image.alt | default: article.title }}"
+                class="responsive-wide-image">
             </noscript>
           </div>
         {% endif %}
@@ -80,9 +80,9 @@
           {% if section.settings.meta %}
             <p class="article__meta">
               <span class="meta--light">{{ 'blogs.article.by' | t }}</span>
-              <span class="meta--dark">{{ article.author }}</span>
+              <span class="meta--dark">: {{ article.author }}</span>
               <span class="meta--light">{{ 'blogs.article.on' | t }}</span>
-              <span class="meta--dark">{{ article.published_at | date: format: 'month_day_year' }}</span>
+              <span class="meta--dark">{{ article.blog.title }}</span>
             </p>
           {% endif %}
         </header>
@@ -109,10 +109,14 @@
           {% if blog.next_article or blog.previous_article %}
             <p class="article__arrows">
               {% if blog.previous_article %}
-                <a href="{{ blog.previous_article }}" class="btn btn--small"> &larr; </a>
+                <a href="{{ blog.previous_article }}" class="btn btn--small">
+                  &larr;
+                </a>
               {% endif %}
               {% if blog.next_article %}
-                <a href="{{ blog.next_article }}" class="btn btn--small"> &rarr; </a>
+                <a href="{{ blog.next_article }}" class="btn btn--small">
+                  &rarr;
+                </a>
               {% endif %}
             </p>
           {% endif %}
@@ -190,8 +194,7 @@
                       class="{% if form.errors contains 'author' %}input-error{% endif %}"
                       placeholder="{{ 'blogs.comments.name' | t }}"
                       value="{{ form.author }}"
-                      autocapitalize="words"
-                    >
+                      autocapitalize="words">
                   </div>
                 </div>
                 <div class="grid__item medium-up--one-half">
@@ -208,8 +211,7 @@
                       value="{{ form.email }}"
                       spellcheck="false"
                       autocomplete="off"
-                      autocapitalize="off"
-                    >
+                      autocapitalize="off">
                   </div>
                 </div>
               </div>
@@ -222,15 +224,17 @@
                   name="comment[body]"
                   id="CommentBody"
                   class="{% if form.errors contains 'body' %}input-error{% endif %}"
-                  placeholder="{{ 'blogs.comments.message' | t }}"
-                ></textarea>
+                  placeholder="{{ 'blogs.comments.message' | t }}"></textarea>
               </div>
 
               {% if blog.moderated? %}
                 <p>{{ 'blogs.comments.moderated' | t }}</p>
               {% endif %}
 
-              <input type="submit" class="btn btn--half btn--form" value="{{ 'blogs.comments.post' | t }}">
+              <input
+                type="submit"
+                class="btn btn--half btn--form"
+                value="{{ 'blogs.comments.post' | t }}">
             {% endform %}
           </div>
         {% endif %}
@@ -245,9 +249,8 @@
                 {% for tag in blog.all_tags %}
                   <li
                     {% if article.tags contains tag %}
-                      class="vertical-nav--active"
-                    {% endif %}
-                  >
+                    class="vertical-nav--active"
+                    {% endif %}>
                     <a class="blog__tag" href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
                   </li>
                 {% endfor %}
@@ -281,164 +284,180 @@
 
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "articleBody": {{ article.content | strip_html | json }},
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": {{ shop.url | append: page.url | json }}
-    },
-    "headline": {{ article.title | json }},
-    {% if article.excerpt != blank %}
-      "description": {{ article.excerpt | strip_html | json }},
-    {% endif %}
-    {% if article.image %}
-      {% assign image_size = article.image.width | append: 'x' %}
-      "image": [
-        {{ article | img_url: image_size | prepend: "https:" | json }}
-      ],
-    {% endif %}
-    "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-    "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-    "author": {
-      "@type": "Person",
-      "name": {{ article.author | json }}
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": {{ shop.name | json }}
-    }
+  "@context": "http://schema.org",
+                "@type": "Article",
+                "articleBody": {{ article.content | strip_html | json }},
+  "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": {{ shop.url | append: page.url | json }}
+  },
+  "headline": {{ article.title | json }},
+  {% if article.excerpt != blank %}
+    "description": {{ article.excerpt | strip_html | json }},
+  {% endif %}
+  {% if article.image %}
+    {% assign image_size = article.image.width | append: 'x' %}
+    "image": [
+    {{ article | img_url: image_size | prepend: "https:" | json }}
+    ],
+  {% endif %}
+  "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "author": {
+                  "@type": "Person",
+                  "name": {{ article.author | json }}
+  },
+  "publisher": {
+                  "@type": "Organization",
+                  "name": {{ shop.name | json }}
+  }
   }
 </script>
 
 {% schema %}
-{
-  "name": "Article",
-  "settings": [
-    {
-      "type": "header",
-      "content": "Article"
-    },
-    {
-      "type": "checkbox",
-      "id": "meta",
-      "label": "Show date and author",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "tags",
-      "label": "Show article tags",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "arrows",
-      "label": "Show navigation arrows",
-      "default": false
-    },
-    {
-      "type": "header",
-      "content": "Share"
-    },
-    {
-      "type": "checkbox",
-      "id": "social",
-      "label": "Show share",
-      "default": true
-    },
-    {
-      "type": "text",
-      "id": "share_label",
-      "label": "Text",
-      "default": "Share"
-    },
-    {
-      "type": "header",
-      "content": "Featured Image"
-    },
-    {
-      "type": "select",
-      "id": "image_height",
-      "label": "Image height",
-      "options": [
-        {"value": "use_image", "label": "Image height"},
-        {"value": "use_screen_two_thirds", "label": "Tall"},
-        {"value": "use_screen_one_half", "label": "Medium"},
-        {"value": "use_screen_one_third", "label": "Short"},
-        {"value": "use_screen_one_fifth", "label": "Tiny"}
-      ],
-      "default": "use_image"
-    },
-    {
-      "type": "header",
-      "content": "Sidebar"
-    },
-    {
-      "type": "checkbox",
-      "id": "sidebar_tags",
-      "label": "Show all tags",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "recent",
-      "default": true,
-      "label": "Show recent articles"
-    },
-    {
-      "type": "checkbox",
-      "id": "recent_author",
-      "default": true,
-      "label": "Show author"
-    },
-    {
-      "type": "select",
-      "id": "color_bg",
-      "label": "Background color",
-      "default": "palette--light bg--neutral",
-      "options": [
-        {"value": "palette--light bg--neutral", "label": "Default"},
-        {"value": "palette--light bg--accent", "label": "Light"},
-        {"value": "palette--dark bg--invert", "label": "Dark"},
-        {"value": "palette--dark bg--invert--accent", "label": "Dark accent"}
-      ]
-    },
-    {
-      "type": "header",
-      "content": "Section spacing"
-    },
-    {
-      "type": "select",
-      "id": "width",
-      "label": "Width",
-      "default": "wrapper",
-      "options": [
-        {"value": "wrapper--full", "label": "Full width padded"},
-        {"value": "wrapper", "label": "Page width"},
-        {"value": "wrapper--narrow", "label": "Page width narrow"}
-      ]
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 180,
-      "step": 2,
-      "unit": "px",
-      "label": "Padding top",
-      "default": 64
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 180,
-      "step": 2,
-      "unit": "px",
-      "label": "Padding bottom",
-      "default": 36
-    }
-  ]
-}
+  {
+    "name": "Article",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Article"
+      },
+      {
+        "type": "checkbox",
+        "id": "meta",
+        "label": "Show date and author",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "tags",
+        "label": "Show article tags",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "arrows",
+        "label": "Show navigation arrows",
+        "default": false
+      }, {
+        "type": "header",
+        "content": "Share"
+      }, {
+        "type": "checkbox",
+        "id": "social",
+        "label": "Show share",
+        "default": true
+      }, {
+        "type": "text",
+        "id": "share_label",
+        "label": "Text",
+        "default": "Share"
+      }, {
+        "type": "header",
+        "content": "Featured Image"
+      }, {
+        "type": "select",
+        "id": "image_height",
+        "label": "Image height",
+        "options": [
+          {
+            "value": "use_image",
+            "label": "Image height"
+          },
+          {
+            "value": "use_screen_two_thirds",
+            "label": "Tall"
+          },
+          {
+            "value": "use_screen_one_half",
+            "label": "Medium"
+          },
+          {
+            "value": "use_screen_one_third",
+            "label": "Short"
+          }, {
+            "value": "use_screen_one_fifth",
+            "label": "Tiny"
+          }
+        ],
+        "default": "use_image"
+      }, {
+        "type": "header",
+        "content": "Sidebar"
+      }, {
+        "type": "checkbox",
+        "id": "sidebar_tags",
+        "label": "Show all tags",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "recent",
+        "default": true,
+        "label": "Show recent articles"
+      }, {
+        "type": "checkbox",
+        "id": "recent_author",
+        "default": true,
+        "label": "Show author"
+      }, {
+        "type": "select",
+        "id": "color_bg",
+        "label": "Background color",
+        "default": "palette--light bg--neutral",
+        "options": [
+          {
+            "value": "palette--light bg--neutral",
+            "label": "Default"
+          }, {
+            "value": "palette--light bg--accent",
+            "label": "Light"
+          }, {
+            "value": "palette--dark bg--invert",
+            "label": "Dark"
+          }, {
+            "value": "palette--dark bg--invert--accent",
+            "label": "Dark accent"
+          }
+        ]
+      }, {
+        "type": "header",
+        "content": "Section spacing"
+      }, {
+        "type": "select",
+        "id": "width",
+        "label": "Width",
+        "default": "wrapper",
+        "options": [
+          {
+            "value": "wrapper--full",
+            "label": "Full width padded"
+          }, {
+            "value": "wrapper",
+            "label": "Page width"
+          }, {
+            "value": "wrapper--narrow",
+            "label": "Page width narrow"
+          }
+        ]
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 180,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 64
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 180,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      }
+    ]
+  }
 {% endschema %}
