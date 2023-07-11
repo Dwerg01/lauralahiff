@@ -1,0 +1,95 @@
+<!-- /snippetss/newsletter-form.liquid -->
+
+{%- liquid
+  assign style = style | default: 'btn--soft'
+  assign color = color | default: 'btn--secondary'
+  assign translation = 'general.newsletter_form.submit' | t
+  assign text = text | default: translation
+  assign class = 'newsletter--default-messages unique-form'
+  assign unique = unique | default: 'default-newsletter'
+
+  if success_text != blank
+    assign class = ''
+  endif
+-%}
+
+{% if unique %}
+  {% form 'customer', id: unique, data-newsletter-form: '', class: class %}
+    {% if content != blank %}
+      {{ content }}
+    {% endif %}
+
+    {% if success_text != blank %}
+      <p class="newsletter__message newsletter__message--success">{{ success_text | newline_to_br }}</p>
+
+      <p class="newsletter__message newsletter__message--error">
+        <em>{{ 'general.newsletter_form.error_message' | t }}</em>
+      </p>
+    {% else %}
+      {% if form.posted_successfully? %}
+        <p>
+          <em>{{ 'general.newsletter_form.subscribed' | t }}</em>
+        </p>
+      {% elsif form.errors %}
+        {% for field in form.errors %}
+          <p>
+            <em>{{ field }} - {{ form.errors.messages[field] }}</em>
+          </p>
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+    <p class="h5--body uppercase">please sign up here</p>
+    <p>Get exclusive content, new podcast announcements, special downloads, artist tips, and more sent to your inbox every two weeks!</p>
+    <input
+      type="hidden"
+      name="contact[tags]"
+      value="newsletter">
+    <input
+      type="hidden"
+      name="contact[accepts_marketing]"
+      value="true">
+    <label class="sidebar-button-label" for="mail-{{ unique }}">Email address *</label>
+    <div class="input-group newsletter-form">
+          <input
+        class="input-group-field"
+        type="email"
+        id="name-{{ unique }}"
+        aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}"
+        autocorrect="off"
+        autocapitalize="off"
+        name="contact[email]"
+        data-newsletter-field>
+    </div>
+    <label class="sidebar-button-label" for="name-{{ unique }}">First Name *</label>
+
+    <div class="input-group newsletter-form">
+        <input
+        class="input-group-field"
+        type="name"
+        id="mail-{{ unique }}"
+        aria-label="{{ 'general.newsletter_form.newsletter_name' | t }}"
+        autocorrect="off"
+        autocapitalize="off"
+        name="contact[name]"
+        data-newsletter-field>
+    </div>
+
+      <button
+        type="submit"
+        class="{{ style }} {{ color }}"
+        name="subscribe"
+        aria-label="{{ text }}"
+        id="subscribe-{{ unique }}">
+        {%- if show_icon -%}
+          {%- render 'icon-arrow-right-long' -%}
+          {%- render 'icon-check-slim' -%}
+        {%- else -%}
+          SUBSCRIBE
+        {%- endif -%}
+      </button>
+
+      <p style="text-align: left;">I respect your privacy. I hate spam. <strong>No unexpected emails, ever.</strong></p>
+
+    </div>
+  {% endform %}
+{% endif %}

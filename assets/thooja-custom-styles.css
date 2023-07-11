@@ -119,9 +119,81 @@ div > div > div > div.section-collection__inner > div.section-collection__head >
   left: calc(50% - 65px);
 }
 
+.upper_case {
+  text-transform: uppercase;
+  margin-block: 72px 32px;
+  font-weight: 600;
+}
 
 
+.blog__sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h5--body.uppercase {
+  font-size: 12px;
+  color: #fff;
+}
 
+.newsletter--default-messages.unique-form {
+  background-color: #1D519C;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width:100%;
+  padding: 24px 16px;
+  margin-block: 64px;
+}
+
+.sidebar-button-label {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.newsletter--default-messages.unique-form > .input-group {
+  width: 100%;
+  background-color: #fff2;
+  border-radius: 0;
+}
+.newsletter--default-messages.unique-form > .input-group > *{
+  background-color: #fff0;
+
+}
+
+.read-more-link-unique {
+  font-size: 14px;
+  color: #1D519C;
+  font-weight: 800;
+  background-color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #1D519C;
+  border-radius: 6px;
+  padding: 14px 40px;
+  letter-spacing: 0.25px;
+  display: inline-block;
+  width: calc(100% - 2 * 16px);
+  margin: 16px;
+}
+
+.body.text-center.bio {
+  width: calc(100% - 2 * 16px);
+  
+}
+
+.profile-image {
+  border-radius: 6px;
+  margin-block: 0 16px;
+}
+
+.grid__item.large-up--one-third.blog__sidebar {
+  background-color: #DAE9FD;
+  padding-inline: 0;
+}
 .navlink--toplevel:after {
 /* ---------------------------------------------- to create icons in header requires additinoal code ---------------------------------------------- */
 }

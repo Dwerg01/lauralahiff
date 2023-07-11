@@ -81,8 +81,10 @@
             <p class="article__meta">
               <span class="meta--light">{{ 'blogs.article.by' | t }}</span>
               <span class="meta--dark">: {{ article.author }}</span>
+            </p>
+            <p class="article__meta">
               <span class="meta--light">{{ 'blogs.article.on' | t }}</span>
-              <span class="meta--dark">{{ article.blog.title }}</span>
+              <span class="meta--dark">{{ blog.title }}</span>
             </p>
           {% endif %}
         </header>
@@ -123,7 +125,7 @@
         {% endif %}
 
         {% if blog.comments_enabled? %}
-          <h2 class="comments__title h5--body">
+          <h2 class="comments__title `body">
             {{ 'blogs.comments.with_count' | t: count: number_of_comments }}
             <span class="comment-count">{{ number_of_comments }}</span>
           </h2>
@@ -258,23 +260,15 @@
             </div>
           {% endif %}
           {% if section.settings.recent %}
-            <p class="h5--body">{{ 'blogs.article.read_more' | t }}</p>
-            {% assign counter = 0 %}
-            {% assign article_limit = 3 %}
             {% assign current_article = article %}
-            {% assign blog_grid = 'one-whole' %}
-            <div class="blog__more">
-              {% for article in blog.articles %}
-                {% unless article.handle == current_article.handle %}
-                  {%- assign show_meta = section.settings.recent_author -%}
-                  {% render 'article-column-item', article: article, show_meta: show_meta %}
-                  {% assign counter = counter | plus: 1 %}
-                  {% if counter == article_limit %}
-                    {% break %}
-                  {% endif %}
-                {% endunless %}
-              {% endfor %}
-            </div>
+            <p class="upper_case">About the author</p>
+            <img class="profile-image" src="{{ article.metafields.custom.article_author.value.profile_image | img_url: '160x' }}" />
+            <p class="body text-center bio">{{ article.metafields.custom.article_author.value.bio }}</p>
+
+            <button class="read-more-link-unique">Learn more about Laura</button>
+
+            {% render 'newsletter-form-with-name' %}
+
           {% endif %}
         </div>
       {% endif %}
@@ -285,11 +279,11 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                "@type": "Article",
-                "articleBody": {{ article.content | strip_html | json }},
+                                                                                                                                                                                                                                                                                                                                                "@type": "Article",
+                                                                                                                                                                                                                                                                                                                                                "articleBody": {{ article.content | strip_html | json }},
   "mainEntityOfPage": {
-                  "@type": "WebPage",
-                  "@id": {{ shop.url | append: page.url | json }}
+                                                                                                                                                                                                                                                                                                                                                "@type": "WebPage",
+                                                                                                                                                                                                                                                                                                                                                "@id": {{ shop.url | append: page.url | json }}
   },
   "headline": {{ article.title | json }},
   {% if article.excerpt != blank %}
@@ -304,12 +298,12 @@
   "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
   "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
   "author": {
-                  "@type": "Person",
-                  "name": {{ article.author | json }}
+                                                                                                                                                                                                                                                                                                                                                                                                                          "@type": "Person",
+                                                                                                                                                                                                                                                                                                                                                                                                                          "name": {{ article.author | json }}
   },
   "publisher": {
-                  "@type": "Organization",
-                  "name": {{ shop.name | json }}
+                                                                                                                                                                                                                                                                                                                                                                                                                          "@type": "Organization",
+                                                                                                                                                                                                                                                                                                                                                                                                                          "name": {{ shop.name | json }}
   }
   }
 </script>
