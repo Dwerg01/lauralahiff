@@ -10172,14 +10172,14 @@
           this.flkty = new FlickityFade(this.slideshowText, {
               fade: true,
               autoPlay: false,
-              prevNextButtons: false,
+              prevNextButtons: true,
               cellAlign: 'left',
               contain: true,
               pageDots: false,
               wrapAround: false,
               selectedAttraction: 0.2,
               friction: 0.6,
-              draggable: false
+              draggable: true
           });
           this.clickSliderNavEvents();
           this.initSliderNav();

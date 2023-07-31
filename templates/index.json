@@ -42,14 +42,14 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
         "height": "use_screen_three_quarters",
-        "overlay_opacity": 15,
+        "overlay_opacity": 30,
         "overlay_color": "#000000",
         "flex_align": "align--bottom-left",
         "align_text": "text-left",
         "color": "text--white",
         "color_bg": "hero__content--transparent",
         "width": "wrapper--none",
-        "padding_top": 2,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -153,9 +153,9 @@
     "e232d23b-d196-42d7-b683-28f172363cb7": {
       "type": "section-liquid",
       "custom_css": [
-        "ul {list-style: none; display: flex; margin: 0 auto 10px; justify-content: center; border-block-end: 2px solid #fff1e6; font-weight: 700;}",
+        "ul {list-style: none; display: flex; margin: 0 auto 10px; justify-content: center; border-block-end: 3px solid #fff1e6; font-weight: 700;}",
         ".active {border-block-end: 3px solid #ec5306; color: #ec5306;}",
-        "li {font-size: 18px; text-transform: uppercase; margin: 0 15px;}",
+        "li {font-size: 24px; text-transform: uppercase; margin: 0 15px;}",
         "a {padding: 4px 20px;}",
         "@media screen and (max-width: 699px) {li {font-size: 14px; } a {padding: 2px 10px; }}"
       ],
@@ -254,12 +254,6 @@
     "1686217514ee0c47d4": {
       "type": "apps",
       "blocks": {
-        "65059d38-023b-41c9-a5c3-766ad59c23d7": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/ugc_media_grid\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "c8a332e8-435f-478d-8473-28d22ac23846": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -268,17 +262,45 @@
         }
       },
       "block_order": [
-        "65059d38-023b-41c9-a5c3-766ad59c23d7",
         "c8a332e8-435f-478d-8473-28d22ac23846"
       ],
       "custom_css": [
-        ".jdgm-carousel__arrows {display: none;}",
-        ".jdgm-carousel--aligned-theme,img {height: 150px;}"
+        ".jdgm-carousel__arrows {\/* display: none; *\/}",
+        ".jdgm-carousel--aligned-theme {height: 200px;}",
+        "img {height: 150px;}"
       ],
       "settings": {
         "color_bg": "palette--light bg--neutral",
         "width": "wrapper",
         "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "634c7dc6-1d82-4e6b-8903-42cafaf39ce9": {
+      "type": "section-text",
+      "blocks": {
+        "template--19371654512931__634c7dc6-1d82-4e6b-8903-42cafaf39ce9-button-1": {
+          "type": "button",
+          "settings": {
+            "button_text": "Read All",
+            "button_url": "shopify:\/\/pages\/reviews",
+            "button_size": "btn--large",
+            "button_style": "hero__btn btn--soft",
+            "button_color": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--19371654512931__634c7dc6-1d82-4e6b-8903-42cafaf39ce9-button-1"
+      ],
+      "custom_css": [
+        "a {background-color: #fff; border: 1px solid #ec5306;}"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 18,
         "padding_bottom": 36
       }
     },
@@ -308,13 +330,12 @@
       "custom_css": [
         "* {font-family: \"Outfit-Regular\";}",
         "h2,p {color: white;}",
-        "h2 {margin: 76px 0 32px 0;}",
-        "h2::after {background: #fff;}",
-        "p {font-size: 16px; max-width: 510px; margin: auto; text-align: center;}",
-        "@media screen and (max-width: 699px) {a {margin: 40px 0; } h2 {margin: 40px 0 30px; }}"
+        "h2 {margin: 76px 0 32px 0; text-transform: uppercase; font-size: 36px;}",
+        "p {font-size: 16px; max-width: 510px; margin: auto;}",
+        "@media screen and (max-width: 699px) {a {margin: 40px 0; } h2 {margin: 40px 0 30px; font-size: 28px; }}"
       ],
       "settings": {
-        "align_text": "text-left",
+        "align_text": "text-center",
         "color_bg": "palette--dark bg--invert--accent",
         "width": "wrapper",
         "padding_top": 36,
@@ -376,7 +397,7 @@
           "type": "button",
           "settings": {
             "button_text": "view all blog posts",
-            "button_url": "shopify:\/\/blogs\/discover-more",
+            "button_url": "shopify:\/\/pages\/blog-post-grid",
             "button_size": "btn--large",
             "button_style": "hero__btn btn--soft",
             "button_color": "btn--primary"
@@ -476,6 +497,7 @@
     },
     "16865805410e2f95f5": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "23962a7f-f588-4cdd-a4c6-1df4b6511b31": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/9d35f684-f743-45ca-9cc2-c5409bb241a8",
@@ -488,11 +510,23 @@
       "block_order": [
         "23962a7f-f588-4cdd-a4c6-1df4b6511b31"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "color_bg": "palette--light bg--neutral",
         "width": "wrapper",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "329d66da-d257-486c-872a-7fb5dfae381e": {
+      "type": "section-liquid",
+      "custom_css": [
+        ".insta {margin: 20px 40px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div id=\"instafeed-instagram-feed\" class=\"insta\" data-type=\"FEEDS\"><\/div>"
       }
     },
     "9b746b38-d47e-44ea-bcca-ded1ad5ea462": {
@@ -545,7 +579,8 @@
         "* {background-color: #ec5306; color: #fff;}",
         ".wrapper {padding-block: 0 10px;}",
         ".icon__column {padding-block: 16px;}",
-        ".icon__column__icon {margin-block: 0;}"
+        ".icon__column__icon {margin-block: 0;}",
+        "@media screen and (max-width: 767px) {.grid__item {width: 50%; display: flex; justify-content: center; } .icon__column {display: flex; align-items: center; } .grid, .grid--full {margin: auto; }}"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
@@ -570,11 +605,13 @@
     "5ec70e7f-fb39-468a-bacc-e76773f63a6c",
     "bb26ba05-73ca-49c0-a141-5e4414a4b414",
     "1686217514ee0c47d4",
+    "634c7dc6-1d82-4e6b-8903-42cafaf39ce9",
     "f5db5928-8e90-48cd-b6df-16915571c473",
     "3052d16f-b78d-4793-ab6d-7f30e76017f0",
     "e10fde93-427a-49d0-9116-c117306fcc94",
     "926f0dbd-5794-46f1-9858-cacd5a0e8f0f",
     "16865805410e2f95f5",
+    "329d66da-d257-486c-872a-7fb5dfae381e",
     "9b746b38-d47e-44ea-bcca-ded1ad5ea462"
   ]
 }

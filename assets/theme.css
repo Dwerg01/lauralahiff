@@ -259,14 +259,14 @@ https://flickity.metafizzy.co
   justify-content: space-between;
   align-items: center;
   margin: 0 -10px 0.5em;
-  max-width: 120px;
+  max-width: 160px;
 }
 .slider-actions > button {
   margin: 0 10px;
 }
 @media only screen and (max-width: 767px) {
   .slider-actions {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -12153,8 +12153,9 @@ form .errors ul,
   left: 0;
   width: 100%;
   bottom: 0;
-  height: 1px;
+  height: 3px;
   background-color: var(--link-hover);
+  background-color: #EC5306;
   transform: scaleX(0);
   transform-origin: 100% 50%;
   transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -12598,9 +12599,9 @@ form .errors ul,
   opacity: 0;
   transform: translateY(-5px);
   transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.35s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  will-change: transform, opacity;
+  will-change: transform, opacity, color;
 }
-.menu__item.parent:hover .navlink--child,
+.navlink--child,
 .menu__item.parent .is-visible .navlink--child, .menu__item.parent:focus-within .navlink--child {
   opacity: 1;
   transform: translateY(0);

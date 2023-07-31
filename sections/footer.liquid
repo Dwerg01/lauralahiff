@@ -25,9 +25,6 @@
               height="{{ section.settings.logo_max_width | divided_by: section.settings.footer_logo.aspect_ratio | ceil }}"
             >
           {% else %}
-            {% comment %}
-            <p class="heading text-subdued text-xxs">© {{ 'now' | date: '%Y' }} - {{ shop.name }}. 100% Irish Owned. Design by <a href="https://thooja.com" class="thooja_icon" target="_blank" title="Ireland's Shopify Experts">Thooja</a></p>
-            {% endcomment %}
             <span class="footer__logo__text">
               {{ shop.name }}
             </span>
@@ -44,15 +41,19 @@
             {%- assign footer_linklist = linklists[section.settings.footer_linklist] -%}
             {% if footer_linklist.links.size > 0 %}
                 <h5>{{ footer_linklist.title }}</h5>
-
-
-            
               <ul class="footer__nav">
                 {% for link in footer_linklist.links %}
                   <li>
                     <a href="{{ link.url }}">{{ link.title }}</a>
                   </li>
                 {% endfor %}
+              </ul>
+
+                <h5>BLOG</h5>
+              <ul class="footer__nav">
+                <li>
+                  <a href="/blogs/discover-more">Discover More</a>
+                </li>
               </ul>
             {%- endif -%}
           </div>
@@ -75,10 +76,9 @@
 <!-- additional block in footer -->
     <div class="footer__addition">
       <h5>CONNECT</h5>
-      <h1>Sign up & save 15%</h1>
       <p>Sign up to our newsletter and be first to hear about new blog posts and product launches.</p>
                 {% render 'newsletter-form', unique: unique, show_discount_message: true, success_text: section.settings.success, color: section.settings.button_color, style: section.settings.button_style %}
-      <span>I respect your privacy. I hate spam. <strong>No unexpected emails, ever.</strong></span>
+      <span>I respect your privacy. I hate spam. <br/><strong>No unexpected emails, ever.</strong></span>
   <div class="newsletter-script">
     <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1.39844 1.27734L10.9984 9.67734L20.5984 1.27734M1.39844 1.27734V15.6773H20.5984V1.27734M1.39844 1.27734H20.5984" stroke="#EC5306" stroke-width="1.2" stroke-linejoin="round"/>

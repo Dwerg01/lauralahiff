@@ -93,54 +93,40 @@
       "settings": {
       }
     },
-    "62d1d396-d8d3-473b-af14-c53efb89ef85": {
-      "type": "section-text",
-      "blocks": {
-        "template--19371654414627__62d1d396-d8d3-473b-af14-c53efb89ef85-16866640905ff44ebc-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "<h2>Articles by Topic<\/h2>",
-            "text_size": 9
-          }
-        }
-      },
-      "block_order": [
-        "template--19371654414627__62d1d396-d8d3-473b-af14-c53efb89ef85-16866640905ff44ebc-1"
-      ],
-      "custom_css": [
-        "h2 {width: fit-content;}",
-        "h2::after {background: #1d519c;}"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "color_bg": "palette--light bg--neutral",
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "0681a3a9-d228-4151-ae6d-68c61fc10502": {
+    "961da885-b5fd-4465-9fa4-0c613149a0fc": {
       "type": "blog",
       "blocks": {
-        "0ccb42a9-8d25-4364-b6c1-0b7b01fb092f": {
+        "29af93e8-a425-4a3d-ba08-ebb3d518ccf8": {
           "type": "blog-selector",
           "settings": {
             "blog-block": "discover-more"
           }
         },
-        "262a2c43-fb10-4ff4-bbda-c40bb45dc391": {
+        "e0502df9-b634-4d0f-9df1-35ab9e734d67": {
           "type": "blog-selector",
           "settings": {
             "blog-block": "news"
           }
         },
-        "417f747d-e731-4a86-bd57-4b6db2075710": {
+        "165b94c7-314c-4580-afe7-910cb39524bf": {
+          "type": "blog-selector",
+          "settings": {
+            "blog-block": "news"
+          }
+        },
+        "d854749d-0579-4db6-a8a3-f066c7819ee0": {
           "type": "blog-selector",
           "settings": {
             "blog-block": "discover-more"
           }
         },
-        "d7e636c7-3e0c-4355-8069-d0f9e189fc6c": {
+        "a588f1ab-e94c-4a43-9524-3d14e7b64ee7": {
+          "type": "blog-selector",
+          "settings": {
+            "blog-block": "discover-more"
+          }
+        },
+        "735a3c71-dc22-4d86-850f-d220f1809698": {
           "type": "blog-selector",
           "settings": {
             "blog-block": "discover-more"
@@ -148,13 +134,12 @@
         }
       },
       "block_order": [
-        "0ccb42a9-8d25-4364-b6c1-0b7b01fb092f",
-        "262a2c43-fb10-4ff4-bbda-c40bb45dc391",
-        "417f747d-e731-4a86-bd57-4b6db2075710",
-        "d7e636c7-3e0c-4355-8069-d0f9e189fc6c"
-      ],
-      "custom_css": [
-
+        "29af93e8-a425-4a3d-ba08-ebb3d518ccf8",
+        "e0502df9-b634-4d0f-9df1-35ab9e734d67",
+        "165b94c7-314c-4580-afe7-910cb39524bf",
+        "d854749d-0579-4db6-a8a3-f066c7819ee0",
+        "a588f1ab-e94c-4a43-9524-3d14e7b64ee7",
+        "735a3c71-dc22-4d86-850f-d220f1809698"
       ],
       "settings": {
       }
@@ -164,7 +149,6 @@
     "d0be38f2-ffe3-4816-9e0d-28cb68f9d87b",
     "blog-custom",
     "main",
-    "62d1d396-d8d3-473b-af14-c53efb89ef85",
-    "0681a3a9-d228-4151-ae6d-68c61fc10502"
+    "961da885-b5fd-4465-9fa4-0c613149a0fc"
   ]
 }

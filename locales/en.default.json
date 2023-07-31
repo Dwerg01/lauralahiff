@@ -17,8 +17,8 @@
       "scroll": "Scroll",
       "see_all": "See all",
       "play": "Play",
-      "next": "next",
-      "prev": "previous",
+      "next": "",
+      "prev": "",
       "total_reviews": "total reviews",
       "star_reviews_info": "{{ rating_value }} out of {{ rating_max }} stars",
       "open_menu": "Open menu",
@@ -39,7 +39,7 @@
       "subtext_html": "The page you're looking for is not available for one of the following reasons:"
     },
     "newsletter_form": {
-      "newsletter_email": "hi@email.com",
+      "newsletter_email": "EMAIL ADDRESS",
       "submit": "Join",
       "subscribed": "Thank you for joining our mailing list!",
       "error_message": "This customer is already subscribed"
@@ -115,8 +115,8 @@
     "article": {
       "articles": "Articles",
       "author_on_date_html": "Posted by {{ author }} on {{ date }}",
-      "by": "By",
-      "on": "on",
+      "by": "Written by",
+      "on": "Filed under",
       "tags": "Categories",
       "read_more": "Read more"
     },

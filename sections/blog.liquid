@@ -64,7 +64,7 @@
               <a class="year-article" href="{{article.url}}">
               <div class="year-blog-month">{{ article.published_at | date: "%B" }}</div>
               <div class="year-blog-title">{{ article.title }}</div>
-              <i class="year-article rte accordion-title"></i>
+              <i class="fa-solid fa-chevron-right year-blog-icon accordion-title"></i>
               </a>
             </div>
             
@@ -146,8 +146,7 @@ function setupFilterButtons() {
 
 // Call the function to set up filter buttons
 setupFilterButtons();
-
-
+  
 {% endjavascript %}
 
 
@@ -183,7 +182,6 @@ setupFilterButtons();
   }
   .wrapper.search > * {
     margin: 0;
-
   }
   .wrapper.search::after {
     display: none;

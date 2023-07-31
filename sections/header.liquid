@@ -235,7 +235,7 @@
   <div class="header__mobile__right">
     {% if section.settings.enable_account and shop.customer_accounts_enabled %}
       <div class="header__mobile__button">
-        <a href="{{ routes.customer-account }}" class="navlink">
+        <a href="{{ routes.account_url }}" class="navlink">
           {% render 'icon-user' %}
           <span class="visually-hidden">{{ 'customer.account.title' | t }}</span>
         </a>
@@ -379,7 +379,7 @@
   data-section-id="{{ section.id }}"
   data-section-type="header"
 >
-  <header class="theme__header" role="banner" data-header-height>
+  <header id="navbar" class="theme__header" role="banner" data-header-height>
     <div>
       <div class="header__mobile" data-header-mobile>
         {{ minimal }}
@@ -478,9 +478,39 @@
       },
       "url": {{ shop.url | append: page.url | json }}
     }
+
+    
   </script>
 {% endif %}
+<script>
+  let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  const navbar = document.getElementById("navbar");
+  if (currentScrollPos > prevScrollpos && currentScrollPos > 0) {
+    navbar.classList.add("scrolled-up");
+    // navbar.classList.add("scrolled-down");
+  } else {
+    navbar.classList.remove("scrolled-up");
+    // navbar.classList.remove("scrolled-down");
+  }
+  prevScrollpos = currentScrollPos;
+};
+</script>
 
+<style>
+  .navbar {
+  transition: transform 0.4s ease-in-out;
+  transform: translateY(0%);
+}
+
+.scrolled-up {
+  transform: translateY(-100%);
+}
+
+
+
+</style>
 {% schema %}
 {
   "name": "Header",

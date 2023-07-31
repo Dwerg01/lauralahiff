@@ -24,10 +24,8 @@
         "toolbar"
       ],
       "custom_css": [
-        ".navtext {font-size: 32px; text-transform: uppercase;}",
         ".theme__header__toolbar__text {padding: 10px 0;}",
-        ".wrapper {padding-block: 10px 0;}",
-        ".theme__header__toolbar {height: 50px;}",
+        ".wrapper {padding-block: 0;}",
         ".theme__header-inner {margin-block: -17px;}",
         ".icon {color: #ec5306; width: 35px; height: 35px;}",
         "@media screen and (max-width: 699px) {.icon {width: 24px; height: 24px; } .navtext {font-size: 24px; } .icon {fill: #ec5306; }}"
@@ -40,7 +38,7 @@
         "main_menu_linklist": "main-menu",
         "enable_search": true,
         "enable_account": true,
-        "header_sticky": "static",
+        "header_sticky": "sticky",
         "transparent_home": false,
         "transparent_collection": false
       }

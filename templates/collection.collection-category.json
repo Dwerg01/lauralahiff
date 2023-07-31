@@ -1,0 +1,258 @@
+{
+  "sections": {
+    "841efbc1-dc75-40ef-87d0-47d0c5a8c988": {
+      "type": "section-row",
+      "custom_css": [
+        ".wrapper {max-width: unset; padding: 0 0 unset 0;}",
+        ".overlap__item {margin: 0; max-height: 656px; overflow: hidden;}",
+        "h2 {font-size: 48px;}",
+        "h2::after {background-color: transparent;}",
+        ".overlap__text {padding: 0 60px;}",
+        "@media screen and (max-width: 699px) {.overlap {flex-direction: column-reverse; } .overlap__image {display: none; } .overlap__text {padding: 20px; } h2 {font-size: 32px; } {text-align: center; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
+        "aspect_ratio": 1,
+        "layout": "right",
+        "title": "{{ collection.title }}",
+        "text": "<p>Explore our range of products aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 124
+      }
+    },
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "blocks": {
+        "filters": {
+          "type": "text",
+          "settings": {
+            "text_size": 5
+          }
+        }
+      },
+      "block_order": [
+        "filters"
+      ],
+      "settings": {
+        "flex_align": "align--middle-left",
+        "show_title_below": false,
+        "show_description_below": false,
+        "show_image": true,
+        "image_height": "use_screen_one_fifth",
+        "overlay_opacity": 20,
+        "overlay_color": "#000000",
+        "color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "collection",
+      "disabled": true,
+      "custom_css": [
+        ".grid--uniform {display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 96px; row-gap: 75px;}",
+        ".name_wrapper {font-size: 22px; font-weight: 700;}",
+        ".money {font-size: 16px;}",
+        ".grid__item {width: 100%;}",
+        ".lazy-image {max-height: 565px; overflow: hidden;}",
+        "@media screen and (max-width: 699px) {.name_wrapper {font-size: 18px; text-align: center; } .price_wrapper {text-align: center; } .grid--uniform {display: block; } .grid__caption {margin-block-end: 3rem; }}"
+      ],
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "pagination_count": 6,
+        "grid_setting_large": 2,
+        "grid_setting_medium": 1,
+        "grid_setting_small": 1,
+        "show_collection_nav": false,
+        "collection_custom_nav_list": "",
+        "align_nav": "inline-nav inline-nav--center",
+        "collection_sorting": false,
+        "filters": false,
+        "width": "wrapper",
+        "padding_top": 66,
+        "padding_bottom": 64
+      }
+    },
+    "6d7742ea-b4dd-4876-ae13-93e4211351c1": {
+      "type": "section-collection-grid",
+      "blocks": {
+        "template--20154656620835__6d7742ea-b4dd-4876-ae13-93e4211351c1-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "{{ collection }}",
+            "text": "",
+            "link_override": "",
+            "content_color": "#333333",
+            "content_bg": "#f7f7f7"
+          }
+        },
+        "template--20154656620835__6d7742ea-b4dd-4876-ae13-93e4211351c1-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sport",
+            "text": "",
+            "link_override": "",
+            "content_color": "#333333",
+            "content_bg": "#f7f7f7"
+          }
+        },
+        "2055bc04-0860-4ff9-876f-a43570d50bdc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "original-paintings",
+            "text": "",
+            "link_override": "",
+            "content_color": "#333333",
+            "content_bg": "#f7f7f7"
+          }
+        }
+      },
+      "block_order": [
+        "template--20154656620835__6d7742ea-b4dd-4876-ae13-93e4211351c1-featured_collection-1",
+        "template--20154656620835__6d7742ea-b4dd-4876-ae13-93e4211351c1-featured_collection-2",
+        "2055bc04-0860-4ff9-876f-a43570d50bdc"
+      ],
+      "settings": {
+        "title": "{{ collection.title }}",
+        "description": "",
+        "grid": 3,
+        "color_bg": "palette--light bg--neutral",
+        "enable_slider": true,
+        "aspect_ratio": 0.6,
+        "place_text": "flex-column",
+        "align_text": "text-center",
+        "use_font": "font-heading",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2341628e-c20d-41e1-8624-ce04a7f3fdf3": {
+      "type": "section-text",
+      "disabled": true,
+      "blocks": {
+        "template--18382273249571__2341628e-c20d-41e1-8624-ce04a7f3fdf3-1686216048c55fce46-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>You may also Enjoy...<\/h2>",
+            "text_size": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--18382273249571__2341628e-c20d-41e1-8624-ce04a7f3fdf3-1686216048c55fce46-1"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b621d83c-d452-464c-936c-8a8f235cc557": {
+      "type": "section-collection",
+      "custom_css": [
+        "{font-family: \"Outfit-Regular\";}",
+        ".name_wrapper {font-size: 22px;}",
+        ".price_wrapper {font-size: 16px;}",
+        "@media scren and (max-width: 699px) {.name_wrapper {font-size: 18px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "section-class": "Add classes here to enable tab swticher functionality",
+        "collection": "{{ collection }}",
+        "grid": 3,
+        "limit": 3,
+        "enable_slider": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_view_all": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 98
+      }
+    },
+    "db1bde7a-c34a-44b8-9da8-e6fbdfdff046": {
+      "type": "section-icons",
+      "blocks": {
+        "template--19329479115043__db1bde7a-c34a-44b8-9da8-e6fbdfdff046-1686282939beca5304-0": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-earth",
+            "icon_color": "#ffffff",
+            "title": "Global Shipping",
+            "text": ""
+          }
+        },
+        "template--19329479115043__db1bde7a-c34a-44b8-9da8-e6fbdfdff046-1686282939beca5304-1": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-basket-return",
+            "icon_color": "#ffffff",
+            "title": "Flexible Returns",
+            "text": ""
+          }
+        },
+        "template--19329479115043__db1bde7a-c34a-44b8-9da8-e6fbdfdff046-1686282939beca5304-2": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-lock-shield",
+            "icon_color": "#ffffff",
+            "title": "Secure Checkout",
+            "text": ""
+          }
+        },
+        "template--19329479115043__db1bde7a-c34a-44b8-9da8-e6fbdfdff046-1686282939beca5304-3": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-phone",
+            "icon_color": "#ffffff",
+            "title": "Dedicated support",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19329479115043__db1bde7a-c34a-44b8-9da8-e6fbdfdff046-1686282939beca5304-0",
+        "template--19329479115043__db1bde7a-c34a-44b8-9da8-e6fbdfdff046-1686282939beca5304-1",
+        "template--19329479115043__db1bde7a-c34a-44b8-9da8-e6fbdfdff046-1686282939beca5304-2",
+        "template--19329479115043__db1bde7a-c34a-44b8-9da8-e6fbdfdff046-1686282939beca5304-3"
+      ],
+      "custom_css": [
+        "* {background-color: #ec5306; color: #fff;}",
+        ".wrapper {padding-block: 0 10px;}",
+        ".icon__column {padding-block: 16px;}",
+        ".icon__column__icon {margin-block: 0;}"
+      ],
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "icon_size": "icon--large",
+        "alignment": "text-center",
+        "grid": 4,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "841efbc1-dc75-40ef-87d0-47d0c5a8c988",
+    "banner",
+    "main",
+    "6d7742ea-b4dd-4876-ae13-93e4211351c1",
+    "2341628e-c20d-41e1-8624-ce04a7f3fdf3",
+    "b621d83c-d452-464c-936c-8a8f235cc557",
+    "db1bde7a-c34a-44b8-9da8-e6fbdfdff046"
+  ]
+}

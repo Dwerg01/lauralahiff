@@ -19,9 +19,19 @@
     <div class="section-icons__background"></div>
 
     <div class="section-icons__foreground">
+      <div class="section-icons-grid__inner">
+        <div class="slider-actions" data-slider-actions>
+          <button type="button" class="slider-arrow slider-arrow--prev" data-prev-arrow>
+            <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
+          </button>
 
-      <div class="grid grid--uniform grid--inner-offsets">
-<!--       <div class="grid grid--uniform grid--inner-offsets" data-slideshow="{{ section.settings.grid }}" > -->
+          <button type="button" class="slider-arrow slider-arrow--next" data-next-arrow>
+            <span class="visually-hidden">{{ 'general.accessibility.prev' | t }}</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid--uniform grid--inner-offsets flickity-disabled-mobile" data-slideshow="{{ section.settings.grid }}" data-custom-scrollbar-items data-block-scroll>
         {%- for block in section.blocks -%}
           {%- liquid
             assign icon_title = block.settings.title
@@ -33,8 +43,7 @@
             endif
           -%}
 
-<!--           <div class="grid__item {{ grid_item_width }}" data-slide="{{ block.id }}" data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}> -->
-          <div class="grid__item {{ grid_item_width }}" {{ block.shopify_attributes }}>
+          <div class="grid__item {{ grid_item_width }}" data-slide="{{ block.id }}" data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
             <div class="icon__column {{ section.settings.alignment }} {{ section.settings.icon_size }}">
               <div class="icon__column__inner">
                 <div class="icon__column__icon {{ custom_class }}" style="--stroke: {{ block.settings.icon_color }};">
@@ -60,7 +69,9 @@
         {%- endfor -%}
       </div>
 
-
+      <div class="custom-scrollbar small-down--show" data-custom-scrollbar>
+        <div class="custom-scrollbar__track" data-custom-scrollbar-track></div>
+      </div>
     </div>
   </div>
 </div>

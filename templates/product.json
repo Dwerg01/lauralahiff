@@ -232,6 +232,7 @@
     },
     "judgeme_section_review_widget_9447": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "judgeme_review_widget_61ad590e": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",

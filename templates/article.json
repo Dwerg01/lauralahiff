@@ -2,6 +2,10 @@
   "sections": {
     "main": {
       "type": "article",
+      "custom_css": [
+        ".wrapper {padding: 0 !important;}",
+        "header,.rte--article,.grid__item,.share-holder {padding-inline-start: 16px;}"
+      ],
       "settings": {
         "meta": true,
         "tags": true,

@@ -52,9 +52,20 @@
       ],
       "settings": {
       }
+    },
+    "169080030307ed036b": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "popups"
+    "popups",
+    "169080030307ed036b"
   ]
 }
