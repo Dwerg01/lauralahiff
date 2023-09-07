@@ -179,6 +179,7 @@ setupFilterButtons();
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
   .wrapper.search > * {
     margin: 0;
@@ -191,6 +192,15 @@ setupFilterButtons();
     text-transform: uppercase;
     margin-inline: 20px;
   }
+  @media screen and (max-width: 699px) {
+    .helper-text {
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .wrapper.search {
+      justify-content: center;
+    }}
   .search-bar {
     background-color: #1D519C;
     height: fit-content;
@@ -301,6 +311,8 @@ setupFilterButtons();
     padding: 14px 10px;
   }
 }
+
+
 {% endstyle %}
 
 {% schema %}

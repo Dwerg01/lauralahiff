@@ -17,10 +17,13 @@
     "4ca963c2-f3c3-4648-bcca-6cb1cf6ac389": {
       "type": "section-row",
       "custom_css": [
-        ".wrapper {max-width: unset; padding: 0 0 40px 0;}",
-        ".overlap__item {margin: 0; max-height: 656px; overflow: hidden;}",
-        "h2 {font-size: 48px;}",
-        "@media screen and (max-width: 699px) {h2 {font-size: 32px; } {text-align: center; }}"
+        ".overlap__item {margin: 0; overflow-x: hidden;}",
+        "h2 {font-size: 48px; margin: 0 0 60px 0;}",
+        ".overlap {margin: 0;}",
+        "h2::after {background-color: transparent;}",
+        ".wrapper {max-width: unset; background-color: #fff1e6; padding: 0;}",
+        ".overlap__content__wrapper {padding-inline: 80px;}",
+        "@media screen and (max-width: 699px) {.overlap {display: flex; flex-direction: column-reverse; } .overlap__content__wrapper {padding-inline: 40px; } h2::after {left: 80px; } h2 {font-size: 32px; margin: 0 0 20px 0; } .overlap__item {text-align: center; } .overlap__text {padding: 0; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
@@ -42,9 +45,13 @@
     "f908647e-a354-4e03-ba2d-cee4caf4a616": {
       "type": "section-row",
       "custom_css": [
-        ".overlap__item {background-color: #fff;}",
-        "h2 {font-size: 32px;}",
-        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+        ".overlap__item {margin: 0; overflow-x: hidden; background-color: #fff;}",
+        "h2 {font-size: 32px; margin: 0 0 60px 0;}",
+        ".overlap {width: 100%; margin: 0;}",
+        "h2::after {left: 0px;}",
+        ".wrapper {max-width: unset; padding: 0;}",
+        ".overlap__content__wrapper {padding-inline: 80px;}",
+        "@media screen and (max-width: 699px) {.overlap {display: flex; flex-direction: column-reverse; } .overlap__content__wrapper {padding-inline: 40px; } h2::after {left: 80px; } h2 {font-size: 25px; margin: 0 0 20px 0; } .overlap__item {text-align: center; } .overlap__text {padding: 0; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
@@ -66,9 +73,13 @@
     "2fdeb7ab-6ec0-4d93-b397-4fdb7e0d4c5f": {
       "type": "section-row",
       "custom_css": [
-        ".overlap__item {background-color: #fff;}",
-        "h2 {font-size: 32px;}",
-        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+        ".overlap__item {margin: 0; overflow-x: hidden; background-color: #fff;}",
+        "h2 {font-size: 32px; margin: 0 0 60px 0;}",
+        ".overlap {width: 100%; margin: 0;}",
+        "h2::after {left: 0px;}",
+        ".wrapper {max-width: unset; padding: 0;}",
+        ".overlap__content__wrapper {padding-inline: 80px;}",
+        "@media screen and (max-width: 699px) {.overlap {display: flex; flex-direction: column-reverse; } .overlap__content__wrapper {padding-inline: 40px; } h2::after {left: 80px; } h2 {font-size: 25px; margin: 0 0 20px 0; } .overlap__item {text-align: center; } .overlap__text {padding: 0; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
@@ -90,9 +101,13 @@
     "f3dfdb73-d164-41f5-983b-eea050a838a4": {
       "type": "section-row",
       "custom_css": [
-        ".overlap__item {background-color: #fff;}",
-        "h2 {font-size: 32px;}",
-        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+        ".overlap__item {margin: 0; overflow-x: hidden; background-color: #fff;}",
+        "h2 {font-size: 32px; margin: 0 0 60px 0;}",
+        ".overlap {width: 100%; margin: 0;}",
+        "h2::after {left: 0px;}",
+        ".wrapper {max-width: unset; padding: 0;}",
+        ".overlap__content__wrapper {padding-inline: 80px;}",
+        "@media screen and (max-width: 699px) {.overlap {display: flex; flex-direction: column-reverse; } .overlap__content__wrapper {padding-inline: 40px; } h2::after {left: 80px; } h2 {font-size: 25px; margin: 0 0 20px 0; } .overlap__item {text-align: center; } .overlap__text {padding: 0; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
@@ -108,15 +123,19 @@
         "color_bg": "palette--light bg--neutral",
         "width": "wrapper",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 76
       }
     },
     "3013e57d-39ca-4821-aff5-ca1e4584431c": {
       "type": "section-row",
       "custom_css": [
-        ".overlap__item {background-color: #fff;}",
-        "h2 {font-size: 32px;}",
-        "@media screen and (max-width: 699px) {h2 {font-size: 25px; }}"
+        ".overlap__item {margin: 0; overflow-x: hidden; background-color: #fff;}",
+        "h2 {font-size: 32px; margin: 0 0 60px 0;}",
+        ".overlap {width: 100%; margin: 0;}",
+        "h2::after {left: 0px;}",
+        ".wrapper {max-width: unset; padding: 0;}",
+        ".overlap__content__wrapper {padding-inline: 80px;}",
+        "@media screen and (max-width: 699px) {.overlap {display: flex; flex-direction: column-reverse; } .overlap__content__wrapper {padding-inline: 40px; } h2::after {left: 80px; } h2 {font-size: 25px; margin: 0 0 20px 0; } .overlap__item {text-align: center; } .overlap__text {padding: 0; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
@@ -161,10 +180,9 @@
       "custom_css": [
         "* {font-family: \"Outfit-Regular\";}",
         "h2,p {color: white;}",
-        "h2 {margin: 76px 0 32px 0;}",
+        "h2 {margin: 76px 0 32px 0; text-transform: uppercase; font-size: 36px;}",
         "p {font-size: 16px; max-width: 510px; margin: auto;}",
-        "h2::after {background: #fff;}",
-        "@media screen and (max-width: 699px) {a {margin: 40px 0; } h2 {margin: 40px 0 30px; }}"
+        "@media screen and (max-width: 699px) {a {margin: 40px 0; } h2 {margin: 40px 0 30px; font-size: 28px; }}"
       ],
       "settings": {
         "align_text": "text-center",

@@ -397,7 +397,7 @@
           "type": "button",
           "settings": {
             "button_text": "view all blog posts",
-            "button_url": "shopify:\/\/pages\/blog-post-grid",
+            "button_url": "shopify:\/\/blogs\/news",
             "button_size": "btn--large",
             "button_style": "hero__btn btn--soft",
             "button_color": "btn--primary"
@@ -431,6 +431,7 @@
     },
     "e10fde93-427a-49d0-9116-c117306fcc94": {
       "type": "section-row",
+      "disabled": true,
       "custom_css": [
         ".overlap__item {margin: 0; padding: 0;}",
         ".overlap {width: 100%;}",
@@ -457,47 +458,52 @@
         "padding_bottom": 36
       }
     },
-    "926f0dbd-5794-46f1-9858-cacd5a0e8f0f": {
-      "type": "section-text",
-      "blocks": {
-        "template--19371654512931__926f0dbd-5794-46f1-9858-cacd5a0e8f0f-1686580582784c5dd7-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Connect with me on Instagram to see behind the scenes<\/p>",
-            "text_size": 9
-          }
-        },
-        "dff84631-5416-486d-b69c-a7c12ceba315": {
-          "type": "kicker",
-          "settings": {
-            "kicker": "<p> @laura.lahiff<\/p>",
-            "enable_caps": false,
-            "text_size": 5
-          }
-        }
-      },
-      "block_order": [
-        "template--19371654512931__926f0dbd-5794-46f1-9858-cacd5a0e8f0f-1686580582784c5dd7-1",
-        "dff84631-5416-486d-b69c-a7c12ceba315"
-      ],
+    "31ead1c7-37a0-49b8-99ff-82d572f54388": {
+      "type": "section-row-wuth-form",
       "custom_css": [
-        ".standard__heading,.standard__kicker {width: fit-content; flex: 1 1 clamp(250px, fit-content, 600px);}",
-        ".text__standard {display: flex; justify-content: space-between; flex-wrap: wrap; margin: 20px;}",
-        ".standard__heading {font-size: 32px;}",
-        ".standard__kicker {font-size: 32px; text-align: center; font-family: \"Outfit-SemiBold\";}",
-        "@media screen and (max-width: 699px) {.standard__heading, .standard__kicker {font-size: 25px; } .standard__heading, .standard__kicker {text-align: center; } .text__standard {justify-content: center; }}"
+        ".overlap__item {margin: 0; padding: 0;}",
+        ".overlap {width: 100%;}",
+        "h2 {font-size: 32px;}",
+        ".overlap__content__wrapper {padding-inline: 80px;}",
+        "p {font-size: 16px;}",
+        ".wrapper {max-width: unset; background-color: #fff1e6; padding: 0;}",
+        ".input-group {border: 1px solid #ec5306; padding: 0; border-radius: 0 10px 10px 0; max-width: 400px;}",
+        "button {margin: 0;}",
+        "@media screen and (max-width: 699px) {.overlap {display: flex; flex-direction: column-reverse; } h2 {font-size: 25px; } .overlap__item {text-align: center; } .overlap__text {padding: 0; }}"
       ],
       "settings": {
-        "align_text": "text-left",
+        "image": "shopify:\/\/shop_images\/Laura_Lahiff_portrait.png",
+        "aspect_ratio": 1,
+        "layout": "left",
+        "title": "Stay Connected",
+        "text": "<p>Get exclusive content, new podcast announcements, special downloads, artist tips, and more sent to your inbox every two weeks!<\/p><p>Get exclusive content, new podcast announcements, special downloads, artist tips, and more sent to your inbox every two weeks!<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
         "color_bg": "palette--light bg--neutral",
         "width": "wrapper",
-        "padding_top": 70,
+        "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "26602e7d-f31a-44ab-880f-51a2fda94382": {
+      "type": "section-liquid",
+      "custom_css": [
+        "{margin: 20px 0; padding: 50px 0 50px;}",
+        ".insta-container {display: flex; justify-content: space-between; max-width: 1246px; margin: auto;}",
+        ".insta,h4 {font-size: 32px; font-weight: 600;}",
+        ".insta > span {display: inline-block; padding: 0px 15px;}",
+        ".custom-icon {}",
+        "@media screen and (max-width: 699px) {.insta {font-size: 25px; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"insta-container\">\n<div>\n<h4>Connect with me on Instagram to see behind the scenes<\/h4>\n<\/div>\n\n<div class=\"insta\"><a \nclass=\"custom-icon\" href=\"https:\/\/www.instagram.com\/laura.lahiff\" target=\"_blank\">\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"1em\" viewBox=\"0 0 448 480\"><path fill=\"#EC5306\" d=\"M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z\"\/><\/svg><\/a>\n<span>@laura.lahiff<\/span><\/div>\n<\/div>"
       }
     },
     "16865805410e2f95f5": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "23962a7f-f588-4cdd-a4c6-1df4b6511b31": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/9d35f684-f743-45ca-9cc2-c5409bb241a8",
@@ -510,6 +516,7 @@
       "block_order": [
         "23962a7f-f588-4cdd-a4c6-1df4b6511b31"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -523,7 +530,10 @@
     "329d66da-d257-486c-872a-7fb5dfae381e": {
       "type": "section-liquid",
       "custom_css": [
-        ".insta {margin: 20px 40px;}"
+        ".insta {margin: 20px 40px;}",
+        ".instafeed-slider-btn {background-color: #fff8; color: #ec5306;}",
+        ".instafeed-btn-next {right: -5%;}",
+        ".instafeed-btn-prev {left: -5%;}"
       ],
       "settings": {
         "custom_liquid": "<div id=\"instafeed-instagram-feed\" class=\"insta\" data-type=\"FEEDS\"><\/div>"
@@ -609,7 +619,8 @@
     "f5db5928-8e90-48cd-b6df-16915571c473",
     "3052d16f-b78d-4793-ab6d-7f30e76017f0",
     "e10fde93-427a-49d0-9116-c117306fcc94",
-    "926f0dbd-5794-46f1-9858-cacd5a0e8f0f",
+    "31ead1c7-37a0-49b8-99ff-82d572f54388",
+    "26602e7d-f31a-44ab-880f-51a2fda94382",
     "16865805410e2f95f5",
     "329d66da-d257-486c-872a-7fb5dfae381e",
     "9b746b38-d47e-44ea-bcca-ded1ad5ea462"

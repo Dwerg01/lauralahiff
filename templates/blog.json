@@ -31,7 +31,6 @@
     },
     "blog-custom": {
       "type": "section-custom-content",
-      "disabled": true,
       "blocks": {
         "blog-custom-img": {
           "type": "image",
@@ -76,6 +75,7 @@
         "blog-custom-img",
         "blog-custom-article"
       ],
+      "disabled": true,
       "custom_css": [
         ".wrapper {max-width: unset; margin-inline: 0; padding: 0;}"
       ],
@@ -140,6 +140,10 @@
         "d854749d-0579-4db6-a8a3-f066c7819ee0",
         "a588f1ab-e94c-4a43-9524-3d14e7b64ee7",
         "735a3c71-dc22-4d86-850f-d220f1809698"
+      ],
+      "custom_css": [
+        "{margin-block: 10px;}",
+        "@media screen and (max-width: 699px) {{margin: 0px; }}"
       ],
       "settings": {
       }

@@ -53,7 +53,7 @@
                     <label for="Form-{{ section.id }}-{{ forloop.index0 }}">{{ block.settings.title }} *</label>
                   <div class="custom-form__block form__field" {{ block.shopify_attributes }}>
 
-                    <textarea rows="10" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormMessage" name="contact[{{ block.settings.title | handleize }}]" placeholder="{{ block.settings.title }}" required></textarea>
+                    <textarea rows="10" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="contactFormMessage" name="contact[{{ block.settings.title | handleize }}]" placeholder="Please leave a detailed comment" required></textarea>
                   </div>
 
                 {%- when 'date' -%}
@@ -189,11 +189,11 @@
               </div>
             {%- endunless -%}
 
-            <input type="submit" class="btn btn--half btn--form custom-form__button" value="{{ 'contact.form.send' | t }}">
 
             <div class="form__legal">
               {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
             </div>
+            <input type="submit" class="btn btn--half btn--form custom-form__button" value="{{ 'contact.form.send' | t }}">
           {%- endform -%}
         </div>
 

@@ -17508,7 +17508,7 @@ html.no-js .quantity__button {
   border-color: var(--text-dark);
   margin: -4px 0 0;
   vertical-align: middle;
-  transform: rotate(-135deg);
+  transform: rotate(135deg);
   transform-origin: 50% 50%;
   transition: all 0.4s;
 }

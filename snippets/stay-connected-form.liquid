@@ -46,10 +46,10 @@
     
       <input class="input-group-field" type="email" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" id="mail-{{ unique }}" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}" autocorrect="off" autocapitalize="off" name="contact[email]" data-newsletter-field>
       
-      <span class="input-group-btn">
+      <span class="stay-connected-btn">
         <button
           type="submit"
-          class="{{ style }} {{ color }} checkbox__form-footer"
+          class="{{ style }} {{ color }} stay-connected__form"
           name="subscribe"
           aria-label="{{ text }}"
           id="subscribe-{{ unique }}"
@@ -66,37 +66,34 @@
     </div>
     <div class="newsletter__checkboxes">
       <p class="warning_text">I'm interested in <br />(select at least one)</p>
-      <label><input class="footer__check" name="contact[updates-art]" type="checkbox" name="interest" value="Art" data-newsletter-field /> &ensp;Art</label><br>
-      <label><input class="footer__check" name="contact[updates-blog]" type="checkbox" name="interest" value="Blog" data-newsletter-field /> &ensp;Blog</label><br>
-      <label><input class="footer__check" name="contact[updates-newsletter]" type="checkbox" name="interest" value="Sustainability" data-newsletter-field /> &ensp;Sustainability</label><br>
+      <label><input class="stay-connected__check" type="checkbox" name="interest" value="Art" data-newsletter-field> &ensp;Art</label><br>
+      <label><input class="stay-connected__check" type="checkbox" name="interest" value="Blog" data-newsletter-field> &ensp;Blog</label><br>
+      <label><input class="stay-connected__check" type="checkbox" name="interest" value="Sustainability" data-newsletter-field> &ensp;Sustainability</label><br>
     </div>
   {% endform %}
 {% endif %}
-
+<p>I respect your privacy. I hate spam. <strong>No unexpected emails, ever.</strong></p>
 
     <script>
 
-        // const buttonClasses = document.querySelector('button').classList;
-        // const lastClass = buttonClasses.item(Array.from(buttonClasses.values().length - 1));
-        const submitButton2 = document.querySelector(".checkbox__form-footer");
-        const footerCheckboxes = document.querySelectorAll('.footer__check');
-        // const buttonWrapper = document.querySelector('.input-group-btn');
+        const submitButton = document.querySelector('.stay-connected__form');
+        const checkboxes = document.querySelectorAll('.stay-connected__check');
+        const buttonWrapper = document.querySelector('.stay-connected-btn');
       
         function validateCheckbox() {
-            const checkedCheckboxes = Array.from(footerCheckboxes).filter(checkbox => checkbox.checked);
+            const checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
 
             // Check if at least one checkbox is checked
-            let atLeastOneChecked = Array.from(footerCheckboxes).some(checkbox => checkbox.checked);
+            let atLeastOneChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
 
             // Enable or disable the "Submit" button based on the validation result
-            atLeastOneChecked ? submitButton2.removeAttribute("disabled") : submitButton2.setAttribute("disabled", "");
-            atLeastOneChecked ? submitButton2.style = 'background-color: #EC5306;color:white;' : submitButton2.style = 'background-color: #999;' ;
+            atLeastOneChecked ? submitButton.removeAttribute("disabled") : submitButton.setAttribute("disabled", "");
+            atLeastOneChecked ? submitButton.style = 'background-color: #EC5306;' : submitButton.style = 'background-color: #999;' ;
           
         }
 
-        footerCheckboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', validateCheckbox);  
-          console.log('checkbox toggled')
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', validateCheckbox);          
         });
       
 

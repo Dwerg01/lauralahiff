@@ -17,8 +17,8 @@
       "scroll": "Scroll",
       "see_all": "See all",
       "play": "Play",
-      "next": "",
-      "prev": "",
+      "next": "next button",
+      "prev": "previous button",
       "total_reviews": "total reviews",
       "star_reviews_info": "{{ rating_value }} out of {{ rating_max }} stars",
       "open_menu": "Open menu",
@@ -215,7 +215,7 @@
       "email": "Email",
       "phone": "Phone Number",
       "message": "Message",
-      "send": "SEND A MESSAGE",
+      "send": "SEND MESSAGE",
       "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
     }
   },

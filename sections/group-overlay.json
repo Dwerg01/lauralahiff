@@ -25,9 +25,8 @@
         },
         "newsletter": {
           "type": "newsletter",
-          "disabled": true,
           "settings": {
-            "title": "Join the club",
+            "title": "Stay In Touch",
             "text": "<p>Enter your email to save 10% on your next order<\/p>",
             "success": "Success! Use code CLUB10 to save 10%",
             "text_align": "align--middle-center",
@@ -35,8 +34,8 @@
             "button_style": "btn--soft",
             "text_color": "text--neutral",
             "bg": "palette--light bg--neutral",
-            "position": "popup--left",
-            "trigger": "idle",
+            "position": "popup--center",
+            "trigger": "delayed",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -53,6 +52,17 @@
       "settings": {
       }
     },
+    "716a1f74-da07-4f9a-a0e8-d4dfcf6bd70a": {
+      "type": "section-liquid",
+      "disabled": true,
+      "custom_css": [
+        "p {padding: 10px 40px; margin: 40px 80px 10px;}",
+        "@media screen and (max-width: 699px) {p {padding: 10px 20px; margin: 0; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<p>We'd love to hear about your experience with us and how we could improve. Share your thoughts in a quick review, and thank you for helping us serve you better!<\/p>"
+      }
+    },
     "169080030307ed036b": {
       "type": "apps",
       "disabled": true,
@@ -66,6 +76,7 @@
   },
   "order": [
     "popups",
+    "716a1f74-da07-4f9a-a0e8-d4dfcf6bd70a",
     "169080030307ed036b"
   ]
 }

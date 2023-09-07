@@ -71,6 +71,14 @@
                 class="{% if form.errors contains 'password' %}input-error{% endif %}"
               >
               <p style="color: #998473;padding-top:0;margin-top:-20px;">8 - 256 characters</p>
+            <div class="form__field" style="display: flex;">
+              <input 
+                type="checkbox"
+                name="customer[newsletter]"
+                id="sign-up"
+                style="display: inline; width: fit-content;margin: 0 15px 0 0;"
+                > Notify me about Laura Lahiff news, offers, and events at my email address. 
+            </div>
             </div>
             <p>When you create an account, you agree to Laura Lahiff’s <a href="/policies/terms-of-service">Terms of Use</a> and acknowledge you have read its <a href="/policies/privacy-policy">Privacy Policy</a>.</p>
             <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn btn--full btn--form">

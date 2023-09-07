@@ -21,15 +21,14 @@
         "button_link": "",
         "button_style": "btn",
         "button_color": "btn--neutral",
-        "color_bg": "palette--light bg--neutral",
+        "color_bg": "palette--light bg--accent",
         "width": "wrapper",
         "padding_top": 36,
-        "padding_bottom": 124
+        "padding_bottom": 62
       }
     },
     "banner": {
       "type": "collection-banner",
-      "disabled": true,
       "blocks": {
         "filters": {
           "type": "text",
@@ -41,6 +40,7 @@
       "block_order": [
         "filters"
       ],
+      "disabled": true,
       "settings": {
         "flex_align": "align--middle-left",
         "show_title_below": false,
@@ -139,7 +139,6 @@
     },
     "2341628e-c20d-41e1-8624-ce04a7f3fdf3": {
       "type": "section-text",
-      "disabled": true,
       "blocks": {
         "template--18382273249571__2341628e-c20d-41e1-8624-ce04a7f3fdf3-1686216048c55fce46-1": {
           "type": "heading",
@@ -152,6 +151,7 @@
       "block_order": [
         "template--18382273249571__2341628e-c20d-41e1-8624-ce04a7f3fdf3-1686216048c55fce46-1"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "text-left",
         "color_bg": "palette--light bg--neutral",

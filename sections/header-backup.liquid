@@ -20,7 +20,7 @@
   endif
 
   for block in section.blocks
-    if block.type == 'toolbar'
+    if block.type == 'toolbar' 
       assign block_attributes = block.shopify_attributes
       assign linkz = block.settings.secondary_linklist
       assign currency_select_type = block.settings.currency_select_type
@@ -150,6 +150,7 @@
   </span>
 {% endcapture %}
 
+{% if template.name == 'index' %}
 {% capture toolbar %}
   <div class="theme__header__toolbar" data-takes-space-wrapper {{ block_attributes }}>
     <div class="{{ width_wrapper_class }}">
@@ -197,6 +198,7 @@
     </div>
   </div>
 {% endcapture %}
+{% endif %}
 
 {% capture minimal %}
   {% if has_toolbar and has_toolbar_text %}
@@ -377,7 +379,7 @@
   data-section-id="{{ section.id }}"
   data-section-type="header"
 >
-  <header class="theme__header" role="banner" data-header-height>
+  <header id="navbar" class="theme__header" role="banner" data-header-height>
     <div>
       <div class="header__mobile" data-header-mobile>
         {{ minimal }}
@@ -476,9 +478,39 @@
       },
       "url": {{ shop.url | append: page.url | json }}
     }
+
+    
   </script>
 {% endif %}
+<script>
+  let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  const navbar = document.getElementById("navbar");
+  if (currentScrollPos > prevScrollpos && currentScrollPos > 0) {
+    navbar.classList.add("scrolled-up");
+    // navbar.classList.add("scrolled-down");
+  } else {
+    navbar.classList.remove("scrolled-up");
+    // navbar.classList.remove("scrolled-down");
+  }
+  prevScrollpos = currentScrollPos;
+};
+</script>
 
+<style>
+  .navbar {
+  transition: transform 0.4s ease-in-out;
+  transform: translateY(0%);
+}
+
+.scrolled-up {
+  transform: translateY(-100%);
+}
+
+
+
+</style>
 {% schema %}
 {
   "name": "Header",

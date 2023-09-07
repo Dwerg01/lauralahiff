@@ -33,7 +33,7 @@
         "@media screen and (max-width: 699px) {.h2 {font-size: 32px; }}"
       ],
       "settings": {
-        "align_text": "text-left",
+        "align_text": "text-center",
         "color_bg": "palette--light bg--neutral",
         "width": "wrapper",
         "padding_top": 36,
@@ -536,7 +536,7 @@
         "template--19329479541027__0e261b3a-b4cc-47a5-b793-5646852c7fd4-16862861222dec0264-2"
       ],
       "settings": {
-        "align_text": "text-left",
+        "align_text": "text-center",
         "color_bg": "palette--light bg--neutral",
         "width": "wrapper",
         "padding_top": 36,
