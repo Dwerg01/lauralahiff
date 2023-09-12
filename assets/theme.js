@@ -5249,7 +5249,7 @@
               autoPlay: false,
               prevNextButtons: true,
               contain: true,
-              pageDots: false,
+              pageDots: true,
               adaptiveHeight: true,
               accessibility: true,
               wrapAround: true,

@@ -22,7 +22,7 @@
 
 <div class="{{ section.settings.width }} section-padding">
   <div class="product-content">
-    <div class="grid">
+    <div class="grid" style="gap:100px">
       <div class="grid__item medium-up--hide">
         {% for block in section.blocks %}
           {% case block.type %}
@@ -33,11 +33,12 @@
       </div>
 
       <div class="grid__item medium-up--two-thirds">
+
         {% if product.media.size > 0 %}
-        {% if product.media.size > 1 %}
+          {% if product.media.size > 1 %}
             <div data-product-slideshow="{{ product.handle }}"
               data-custom-scrollbar-items
-              class="product__slides flickity-lock-height flickity-slider flickity-disabled-mobile"
+              class="product__slides flickity-lock-height flickity-disabled-mobile"
               style="--default-ratio: {{ 1 | divided_by: product.media[0].aspect_ratio | times: 100 | at_most: 100 }}%">
           {% else %}
             <div class="product__slides product__slides--single">
@@ -85,7 +86,7 @@
                 {% assign alt_text_option = alt_text_parts | last %}
               {% endif %}
 
-              <div class="media__thumb"
+              {% comment %} <div class="media__thumb"
                 data-slideshow-thumbnail
                 data-media-select="{{ media.id }}"
                 aria-label="{{ alt_text_parts | first }}"
@@ -96,7 +97,7 @@
                 {%- elsif media.media_type contains 'video' -%}
                   {% render 'icon-media-video' %}
                 {%- endif -%}
-              </div>
+              </div> {% endcomment %}
             {% endfor %}
           </div>
         {%- endif -%}

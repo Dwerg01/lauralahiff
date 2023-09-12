@@ -91,36 +91,6 @@ transform: translate3d(0,-100%,0);
   
 }
 
-/* ================================ Product Page ================================ */
-
-.media__zoom__icon {
-  top: 10px;
-  left: 10px;
-  bottom: unset;
-}
-.product__slides > .flickity-prev-next-button .flickity-button-icon {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-
-.flickity-button.flickity-prev-next-button.next {
-}
-
-.flickity-button:focus {
-  box-shadow: none;
-}
-
-.pin-it-button {
-  width: 30px;
-  position: absolute;
-  right:0;
-  top: 0;
-}
-
-/* ================================ Product Page End ================================ */
-
 /* Cart icon with shopping product count */
 .cart__icon__content {
   position: relative;
@@ -143,6 +113,61 @@ transform: translate3d(0,-100%,0);
 .custom-scrollbar {
   background-color: #fff !important;
 }
+
+/* product page changes */
+.flickity-button-icon {
+  fill: #EC5306;
+}
+.flickity-prev-next-button:focus {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 700px) {
+  
+  .media__zoom__icon {
+    left: -70px;
+    bottom: 82%;
+  }
+}
+
+
+.media__zoom__icon__inner {
+  background-color: #EC5306;}
+
+.media__zoom__icon__inner > .icon.icon-zoom {
+  fill:#fff;
+}
+
+.lazy-image.mobile-zoom-wrapper {
+  width: 70%;
+  margin: auto;
+  
+}
+.lazy-image.mobile-zoom-wrapper > img {
+  top: 10%;
+}
+
+.pin-it-button {
+  width: fit-content;
+  z-index: 100;
+  padding: 2px 15px;
+  position: absolute;
+  right: 0px;
+  top: 80px;
+  background-color: #EC5306;
+  border-radius:50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.pin-it-button {
+}
+.pin-it-button>a>svg {
+  padding: 5px;
+  height:30px
+}
+
 
 /* buttons  */
 
@@ -187,9 +212,6 @@ transform: translate3d(0,-100%,0);
     display: none;
   }
   .overlap {
-    margin: 0;
-  }
-  .overlap__image {
     margin: 0;
   }
 }
@@ -372,7 +394,7 @@ div > div > div > div.section-collection__inner > div.section-collection__head >
   border-width: 0 0 2px 2px;
   border-style: solid;
   border-color: #EC5306;
-  transform: rotate(135deg);
+  transform: rotate(45deg);
   transform-origin: 50% 50%;
   transition: all 0.4s;
 }
@@ -384,20 +406,6 @@ div > div > div > div.section-collection__inner > div.section-collection__head >
   height: 20px;
   margin-right: 7px;
   vertical-align: middle;
-}
-
-.product-accordion .accordion__title:after {
-  transform: rotate(135deg);
-  width: 14px;
-  height: 14px;
-  border-width: 0 0 2px 2px;
-  border-style: solid;
-  border-color: #EC5306;
-  
-}
-.accordion__title.accordion-is-open:after {
-  transform: rotate(-45deg);
-
 }
 
 /* Form legal  */

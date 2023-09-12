@@ -2608,14 +2608,6 @@ fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
-.product-accordion > .accordion__wrapper > button.accordion__title {
-  border-bottom: 1px solid #EC5306;
-}
-
-.accordion__wrapper {
-  border-bottom: none;
-}
-
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -19035,7 +19027,7 @@ dd {
 .theme-animate-hover .lazy-image.has-zoom-animation .icon-zoom {
   transition: transform 2s cubic-bezier(0, 0, 0.35, 1), opacity 0.2s linear;
   transform: translateX(0);
-  opacity: 1;
+  opacity: 0;
 }
 .theme-animate-hover .lazy-image.has-zoom-animation .background-size-cover {
   transition: transform 2s ease-out;
@@ -20412,7 +20404,6 @@ body .shopify-email-marketing-confirmation__container {
 .overlap__image {
   display: block;
   border-radius: var(--RADIUS-LG);
- 
 }
 .overlap__image-wrapper .overlap__image {
   width: 100%;
