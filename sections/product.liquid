@@ -33,12 +33,11 @@
       </div>
 
       <div class="grid__item medium-up--two-thirds">
-
         {% if product.media.size > 0 %}
-          {% if product.media.size > 1 %}
+        {% if product.media.size > 1 %}
             <div data-product-slideshow="{{ product.handle }}"
               data-custom-scrollbar-items
-              class="product__slides flickity-lock-height flickity-disabled-mobile"
+              class="product__slides flickity-lock-height flickity-slider flickity-disabled-mobile"
               style="--default-ratio: {{ 1 | divided_by: product.media[0].aspect_ratio | times: 100 | at_most: 100 }}%">
           {% else %}
             <div class="product__slides product__slides--single">

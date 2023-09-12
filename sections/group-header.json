@@ -18,20 +18,6 @@
             "show_currency_mobile": true,
             "currency_select_type": "country"
           }
-        },
-        "e81ee814-943c-43bc-bb5c-a3079e7cd8bf": {
-          "type": "toolbar",
-          "settings": {
-            "announcement_text": "<p>SECOND TOOLBAR<\/p>",
-            "secondary_linklist": "",
-            "show_menu_desktop": true,
-            "show_menu_mobile": true,
-            "show_locale_desktop": true,
-            "show_locale_mobile": true,
-            "show_currency_desktop": true,
-            "show_currency_mobile": true,
-            "currency_select_type": "country"
-          }
         }
       },
       "block_order": [

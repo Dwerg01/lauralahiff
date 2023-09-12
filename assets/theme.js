@@ -5247,7 +5247,7 @@
           const instance = this;
           let flickityOptions = {
               autoPlay: false,
-              prevNextButtons: false,
+              prevNextButtons: true,
               contain: true,
               pageDots: false,
               adaptiveHeight: true,

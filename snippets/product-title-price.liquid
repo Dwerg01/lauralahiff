@@ -23,9 +23,12 @@
     {%- endif -%}
   </div>
   {% if block.settings.product_show_vendor %}
-    <div class="product__subheading">
+  {% assign primary_collection = product.collections.first %}
+  
+  <div class="product__subheading">
       <p>
-        <a href="{{ collection.url }}">{{ collection.title }}</a>
+
+        <a href="{{ primary_collection.url }}">{{ primary_collection.title }}</a>
       </p>
     </div>
   {% endif %}
