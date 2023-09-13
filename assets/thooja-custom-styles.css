@@ -122,11 +122,30 @@ transform: translate3d(0,-100%,0);
   box-shadow: none;
 }
 
+.flickity-page-dots {
+  bottom: 23%;
+}
+
+
+.flickity-page-dots .flickity-page-dot {
+  background: #fff;
+  opacity: 1;
+  
+}
+
+.flickity-page-dot.is-selected {
+  background-color: #EC5306;
+}
+.media__zoom__icon {
+    height: 38px;
+    left: 10px;
+    top: 5%;
+  }
+
 @media screen and (min-width: 700px) {
   
   .media__zoom__icon {
-    left: -70px;
-    bottom: 82%;
+    left: clamp(-100px,-15%,-50px);;
   }
 }
 
