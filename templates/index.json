@@ -590,7 +590,7 @@
         ".wrapper {padding-block: 0 10px;}",
         ".icon__column {padding-block: 16px;}",
         ".icon__column__icon {margin-block: 0;}",
-        "@media screen and (max-width: 767px) {.grid__item {width: 50%; display: flex; justify-content: center; } .icon__column {display: flex; align-items: center; } .grid, .grid--full {margin: auto; }}"
+        "@media screen and (max-width: 767px) {.grid.grid--uniform.grid--inner-offsets {display: flex; flex-wrap: wrap; }}"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",

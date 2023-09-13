@@ -115,11 +115,20 @@ transform: translate3d(0,-100%,0);
 }
 
 /* product page changes */
+
+@media only screen and (max-width: 767px)
+.product__media {
+min-width: 100%;}
+
 .flickity-button-icon {
   fill: #EC5306;
 }
 .flickity-prev-next-button:focus {
   box-shadow: none;
+}
+
+.flickity-prev-next-button {
+  top: 45%;
 }
 
 .flickity-page-dots {
@@ -139,10 +148,10 @@ transform: translate3d(0,-100%,0);
 .media__zoom__icon {
     height: 38px;
     left: 10px;
-    top: 5%;
+    top: 60px;
   }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   
   .media__zoom__icon {
     left: clamp(-100px,-15%,-50px);;
@@ -159,9 +168,11 @@ transform: translate3d(0,-100%,0);
 
 .lazy-image.mobile-zoom-wrapper {
   width: 70%;
-  margin: auto;
-  
+  margin: auto
 }
+
+  
+
 .lazy-image.mobile-zoom-wrapper > img {
   top: 10%;
 }
@@ -179,12 +190,31 @@ transform: translate3d(0,-100%,0);
   display: flex;
   align-items: center;
 }
-
-.pin-it-button {
+@media screen and (max-width: 767px) {
+.lazy-image.mobile-zoom-wrapper {
+  width: 100%;
 }
+  .pin-it-button {
+    right: 120px;
+  }
+}
+
 .pin-it-button>a>svg {
   padding: 5px;
   height:30px
+}
+
+/* product page share */
+
+.custom_share_product {
+  margin: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.custom_share_product > a {
+color: #EC5306;
+margin: 0 10px ;
 }
 
 
@@ -369,10 +399,15 @@ div > div > div > div.section-collection__inner > div.section-collection__head >
   background-color: #DAE9FD;
   padding-inline: 0;
 }
+
+.radio__legend__label.radio__legend__label--alt {
+  text-transform: uppercase;
+}
+
 .navlink--toplevel:after {
 /* ---------------------------------------------- to create icons in header requires additinoal code ---------------------------------------------- */
 }
-
+Fse
 .accordion__heading, .overlap__content__wrapper > h2.h3
 {
   padding-bottom: 1rem;
@@ -413,14 +448,14 @@ div > div > div > div.section-collection__inner > div.section-collection__head >
   border-width: 0 0 2px 2px;
   border-style: solid;
   border-color: #EC5306;
-  transform: rotate(45deg);
+  transform: rotate(135deg);
   transform-origin: 50% 50%;
   transition: all 0.4s;
 }
 .accordion__title.accordion-is-open:after {
   transform: rotate(-45deg);
 }
-.accordion__title .icon {
+.accordion__title.icon {
   width: 20px;
   height: 20px;
   margin-right: 7px;
@@ -531,7 +566,7 @@ transition: all 5s ease;
     overflow: auto;
   }
   .section-icons .grid__item{
-    width: 100%;
+    /* width: 100%; */
     padding-left: var(--gutter);
     padding-right: var(--gutter);
     transform: none !important;

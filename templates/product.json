@@ -94,6 +94,7 @@
         },
         "c5613bf3-f74b-48c8-b8be-10f0629972d8": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div><span>SHARE<\/span>\n<i class=\"fa fa-instagram\" aria-hidden=\"true\"><\/i>\n<i class=\"fa fa-twitter\" aria-hidden=\"true\"><\/i>\n<i class=\"fa fa-whatsapp\" aria-hidden=\"true\"><\/i>\n<i class=\"fa fa-link\" aria-hidden=\"true\"><\/i>\n<\/div>\n<style>\ni.fa {\ncolor: #EC5306;\nfont-size: 30px;\nmargin: 0 5px ;\n}\n<\/style>"
           }
@@ -110,6 +111,13 @@
         "pickup",
         "sharing",
         "c5613bf3-f74b-48c8-b8be-10f0629972d8"
+      ],
+      "custom_css": [
+        ".accordion__title:after {transform: rotate(135deg); width: 14px; height: 14px; border-width: 0 0 2px 2px; border-style: solid; border-color: #ec5306;}",
+        ".accordion__title.accordion-is-open:after {transform: rotate(-45deg);}",
+        ".accordion__wrapper {border-block: 1px solid #ec5306;}",
+        ".form__selectors {margin-block-start: 20px;}",
+        ".quantity__wrapper {margin-block-end: 40px;}"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
@@ -371,7 +379,8 @@
         "* {background-color: #ec5306; color: #fff;}",
         ".wrapper {padding-block: 0 10px;}",
         ".icon__column {padding-block: 16px;}",
-        ".icon__column__icon {margin-block: 0;}"
+        ".icon__column__icon {margin-block: 0;}",
+        "@media screen and (max-width: 767px) {.grid.grid--uniform.grid--inner-offsets {display: flex; flex-wrap: wrap; }}"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
