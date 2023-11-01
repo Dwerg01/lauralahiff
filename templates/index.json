@@ -22,7 +22,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP ART",
-            "button_url": "shopify:\/\/collections\/all",
+            "button_url": "shopify:\/\/collections",
             "button_size": "",
             "button_style": "hero__btn btn",
             "button_color": "btn--primary"
@@ -119,7 +119,7 @@
         "text": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
         "color_text_bg": "palette--light bg--accent",
         "button_label": "Shop Now",
-        "button_link": "shopify:\/\/collections",
+        "button_link": "shopify:\/\/products\/equinox-art-print",
         "button_style": "btn",
         "button_color": "btn--neutral",
         "color_bg": "palette--light bg--neutral",
@@ -255,7 +255,7 @@
       "type": "apps",
       "blocks": {
         "c8a332e8-435f-478d-8473-28d22ac23846": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1400
           }
@@ -396,8 +396,8 @@
         "3a51e2d6-76ad-4613-a96c-fe2d70439610": {
           "type": "button",
           "settings": {
-            "button_text": "view all blog posts",
-            "button_url": "shopify:\/\/blogs\/news",
+            "button_text": "View All Blog Posts",
+            "button_url": "shopify:\/\/blogs\/all",
             "button_size": "btn--large",
             "button_style": "hero__btn btn--soft",
             "button_color": "btn--primary"
@@ -532,8 +532,8 @@
       "custom_css": [
         ".insta {margin: 20px 40px;}",
         ".instafeed-slider-btn {background-color: #fff8; color: #ec5306;}",
-        ".instafeed-btn-next {right: -5%;}",
-        ".instafeed-btn-prev {left: -5%;}"
+        ".slide {aspect-ratio: 1\/1;}",
+        ".instafeeds-container > .slider > .slide {width: 280px;}"
       ],
       "settings": {
         "custom_liquid": "<div id=\"instafeed-instagram-feed\" class=\"insta\" data-type=\"FEEDS\"><\/div>"

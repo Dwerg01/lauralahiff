@@ -21,6 +21,17 @@
             "cutline": ""
           }
         },
+        "form": {
+          "type": "form",
+          "settings": {
+            "variant_form": "dropdown",
+            "show_quantity": true,
+            "show_remaining": false,
+            "enable_payment_button": false,
+            "subscriptions_enable_selectors": false,
+            "info_page": ""
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -42,17 +53,6 @@
             "title_5": "",
             "icon_name_5": "",
             "raw_content_5": ""
-          }
-        },
-        "form": {
-          "type": "form",
-          "settings": {
-            "variant_form": "dropdown",
-            "show_quantity": true,
-            "show_remaining": false,
-            "enable_payment_button": false,
-            "subscriptions_enable_selectors": false,
-            "info_page": ""
           }
         },
         "icon-1": {
@@ -103,8 +103,8 @@
       "block_order": [
         "title",
         "siblings",
-        "description",
         "form",
+        "description",
         "icon-1",
         "icon-2",
         "upsell",
@@ -117,7 +117,8 @@
         ".accordion__title.accordion-is-open:after {transform: rotate(-45deg);}",
         ".accordion__wrapper {border-block: 1px solid #ec5306;}",
         ".form__selectors {margin-block-start: 20px;}",
-        ".quantity__wrapper {margin-block-end: 40px;}"
+        ".quantity__wrapper {margin-block-end: 40px;}",
+        "@media screen and (max-width: 767px) {.product__slides {padding: 0; margin: 0; } .product__media {min-width: 100%; margin-left: 0; }}"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
@@ -135,35 +136,35 @@
           "type": "text",
           "settings": {
             "title": "Details",
-            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+            "content": "<p>{{ product.metafields.custom.product_details | metafield_tag }}<\/p>"
           }
         },
         "template--19329479770403__929fa99d-69e8-4f6c-a948-9636cd24e1ee-1686302501398f6b53-1": {
           "type": "text",
           "settings": {
             "title": "Sustainability",
-            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+            "content": "<p>{{ product.metafields.custom.product_sustainability | metafield_tag }}<br\/><a href=\"\/blogs\/sustainability\" title=\"Sustainability\">READ MORE<\/a><\/p>"
           }
         },
         "template--19329479770403__929fa99d-69e8-4f6c-a948-9636cd24e1ee-1686302501398f6b53-2": {
           "type": "text",
           "settings": {
             "title": "Care guide",
-            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+            "content": "<p>{{ product.metafields.custom.product_care_guide | metafield_tag }}<\/p>"
           }
         },
         "243bd7c4-0b0e-4f11-a126-755f7be3536f": {
           "type": "text",
           "settings": {
             "title": "Packaging",
-            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+            "content": "<p>{{ product.metafields.custom.product_packaging | metafield_tag }}<\/p>"
           }
         },
         "d6383d31-78fb-4b7e-bb5b-3913c214e693": {
           "type": "text",
           "settings": {
             "title": "Delivery & Returns",
-            "content": "<p>Pellentesque aliquam consequat tortor, quis laoreet libero porttitor vel. Nam arcu risus, auctor porttitor efficitur sit amet, venenatis et mi. Nulla eget hendrerit nisl. Cras a felis malesuada, tempor mauris a, iaculis metus. Suspendisse scelerisque est non erat efficitur pharetra. Etiam facilisis augue sed dui porta viverra. Mauris tincidunt at metus ut luctus.<\/p>"
+            "content": "<p>{{ product.metafields.custom.product_delivery_returns | metafield_tag }}<\/p>"
           }
         }
       },
@@ -178,6 +179,7 @@
         ".accordion__wrapper {border-bottom: 1px solid #ec5306; border-top: none; padding-block: 11px;}",
         ".accordion__title {font-size: 12px; text-transform: uppercase; font-weight: 700;}",
         "p {font-size: 14px;}",
+        "a[title=\"Sustainability\"] {background-color: #81d435; padding: 14px 40px; border-radius: 6px; color: #fff; text-decoration: 0;}",
         "@media screen and (max-width: 699px) {.accordion__wrapper {padding-block: 5px; }}"
       ],
       "settings": {
@@ -229,14 +231,14 @@
         "@media screen and (max-width: 699px) {.palette--light, .overlap__item {background-color: #fff !important; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/productimage1.png",
+        "image": "{{ product.metafields.custom.related_blog_image.value }}",
         "aspect_ratio": 1,
         "layout": "left",
-        "title": "Blog Title",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "title": "{{ product.metafields.custom.related_blog_title.value }}",
+        "text": "<p>{{ product.metafields.custom.related_blog_description | metafield_tag }}<\/p>",
         "color_text_bg": "palette--light bg--neutral",
         "button_label": "READ MORE",
-        "button_link": "shopify:\/\/blogs\/discover-more",
+        "button_link": "{{ product.metafields.custom.related_blog_url.value }}",
         "button_style": "btn--outline",
         "button_color": "btn--primary",
         "color_bg": "palette--light bg--neutral",
@@ -249,7 +251,7 @@
       "type": "apps",
       "blocks": {
         "judgeme_review_widget_61ad590e": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
@@ -269,7 +271,7 @@
       "type": "apps",
       "blocks": {
         "f4d82d0d-e084-4672-ad13-94ef8845600d": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080
           }

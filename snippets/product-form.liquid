@@ -202,6 +202,7 @@
                 </fieldset>
               {%- else -%}
                 {%- assign selects_counter = selects_counter | plus: 1 -%}
+                {% unless product.tags contains "original paintings" %}
                 <div class="select__fieldset">
                   {% capture input_id %}{{ product.id }}-option-{{ option.position }}{% endcapture %}
                   <span class="radio__legend">
@@ -243,6 +244,7 @@
                     </div>
                   </popout-select>
                 </div>
+                      {% endunless %}
               {%- endif -%}
             </div>
           {% endfor %}
@@ -276,6 +278,8 @@
       {%- endif -%}
 
       {% if block.settings.show_quantity %}
+        {% unless product.tags contains "original paintings" %}
+
         <span class="radio__legend__label radio__legend__label--alt">Quantity</span>
         <div class="quantity__wrapper" data-quantity-selector>
           <button type="button" class="quantity__button quantity__button--minus" data-decrease-quantity>&minus;</button>
@@ -292,6 +296,7 @@
           >
           <button type="button" class="quantity__button quantity__button--plus" data-increase-quantity>+</button>
         </div>
+        {% endunless %}
       {% endif %}
 
       {%- if block.settings.show_remaining or size_chart_index == -1 -%}

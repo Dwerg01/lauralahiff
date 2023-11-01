@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "d0be38f2-ffe3-4816-9e0d-28cb68f9d87b": {
+      "type": "section-row",
+      "custom_css": [
+        "{background-color: #dae9fd;}",
+        ".wrapper {max-width: unset; margin-inline: 0; padding: 0;}",
+        ".overlap__item {background-color: #dae9fd; margin: 0;}",
+        ".overlap__content__wrapper {max-width: 514px; margin: auto;}",
+        "h2 {font-size: 48px;}",
+        "h2::after {height: 0;}",
+        "p {font-size: 16px;}",
+        "@media screen and (max-width: 699px) {{min-height: 314px; text-align: center; } .overlap__image {display: none; } h2 {font-size: 32px; }}"
+      ],
+      "settings": {
+        "image": "{{ blog.metafields.custom.blog_cover_image.value }}",
+        "aspect_ratio": 1,
+        "layout": "right",
+        "title": "{{ blog.title }}",
+        "text": "<p>{{ blog.metafields.custom.blog_description | metafield_tag }}<\/p>",
+        "color_text_bg": "palette--light bg--accent",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn",
+        "button_color": "btn--neutral",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "961da885-b5fd-4465-9fa4-0c613149a0fc": {
+      "type": "blog",
+      "blocks": {
+        "29af93e8-a425-4a3d-ba08-ebb3d518ccf8": {
+          "type": "blog-selector",
+          "settings": {
+            "blog-block": "art"
+          }
+        }
+      },
+      "block_order": [
+        "29af93e8-a425-4a3d-ba08-ebb3d518ccf8"
+      ],
+      "custom_css": [
+        ".read-more-box {display: none;}"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "d0be38f2-ffe3-4816-9e0d-28cb68f9d87b",
+    "961da885-b5fd-4465-9fa4-0c613149a0fc"
+  ]
+}

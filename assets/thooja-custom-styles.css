@@ -110,6 +110,12 @@ transform: translate3d(0,-100%,0);
   border-radius: 50%;
 }
 
+@media screen and (max-width: 600px) {
+.header__cart__status {
+  right: -9px;
+}
+}
+
 .custom-scrollbar {
   background-color: #fff !important;
 }
@@ -195,7 +201,7 @@ min-width: 100%;}
   width: 100%;
 }
   .pin-it-button {
-    right: 120px;
+    right: 40px;
   }
 }
 
@@ -448,12 +454,12 @@ Fse
   border-width: 0 0 2px 2px;
   border-style: solid;
   border-color: #EC5306;
-  transform: rotate(135deg);
+  transform: rotate(-45deg);
   transform-origin: 50% 50%;
   transition: all 0.4s;
 }
 .accordion__title.accordion-is-open:after {
-  transform: rotate(-45deg);
+  transform: rotate(135deg);
 }
 .accordion__title.icon {
   width: 20px;

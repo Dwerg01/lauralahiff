@@ -54,13 +54,12 @@
     },
     "716a1f74-da07-4f9a-a0e8-d4dfcf6bd70a": {
       "type": "section-liquid",
-      "disabled": true,
       "custom_css": [
         "p {padding: 10px 40px; margin: 40px 80px 10px;}",
         "@media screen and (max-width: 699px) {p {padding: 10px 20px; margin: 0; }}"
       ],
       "settings": {
-        "custom_liquid": "<p>We'd love to hear about your experience with us and how we could improve. Share your thoughts in a quick review, and thank you for helping us serve you better!<\/p>"
+        "custom_liquid": "{% if page.title == 'Reviews' %}<p>We'd love to hear about your experience with us and how we could improve. Share your thoughts in a quick review, and thank you for helping us serve you better!<\/p>\n{% endif %}"
       }
     },
     "169080030307ed036b": {

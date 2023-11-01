@@ -16,7 +16,7 @@
         "image": "shopify:\/\/shop_images\/banner_image-transformed.png",
         "aspect_ratio": 1,
         "layout": "right",
-        "title": "Blog Collection",
+        "title": "All Blog Posts",
         "text": "<p>Explore our range of products aenean pulvinar libero ipsum, vitae tristique magna tempus sit amet. Maecenas a est finibus, mollis lectus non, mattis nisi. Nunc non lacus quis purus malesuada congue ut eu dolor.<\/p>",
         "color_text_bg": "palette--light bg--accent",
         "button_label": "",
@@ -99,37 +99,25 @@
         "29af93e8-a425-4a3d-ba08-ebb3d518ccf8": {
           "type": "blog-selector",
           "settings": {
-            "blog-block": "discover-more"
+            "blog-block": "sustainability"
           }
         },
         "e0502df9-b634-4d0f-9df1-35ab9e734d67": {
           "type": "blog-selector",
           "settings": {
-            "blog-block": "news"
+            "blog-block": "art"
           }
         },
         "165b94c7-314c-4580-afe7-910cb39524bf": {
           "type": "blog-selector",
           "settings": {
-            "blog-block": "news"
+            "blog-block": "events"
           }
         },
         "d854749d-0579-4db6-a8a3-f066c7819ee0": {
           "type": "blog-selector",
           "settings": {
-            "blog-block": "discover-more"
-          }
-        },
-        "a588f1ab-e94c-4a43-9524-3d14e7b64ee7": {
-          "type": "blog-selector",
-          "settings": {
-            "blog-block": "discover-more"
-          }
-        },
-        "735a3c71-dc22-4d86-850f-d220f1809698": {
-          "type": "blog-selector",
-          "settings": {
-            "blog-block": "discover-more"
+            "blog-block": "sport"
           }
         }
       },
@@ -137,9 +125,7 @@
         "29af93e8-a425-4a3d-ba08-ebb3d518ccf8",
         "e0502df9-b634-4d0f-9df1-35ab9e734d67",
         "165b94c7-314c-4580-afe7-910cb39524bf",
-        "d854749d-0579-4db6-a8a3-f066c7819ee0",
-        "a588f1ab-e94c-4a43-9524-3d14e7b64ee7",
-        "735a3c71-dc22-4d86-850f-d220f1809698"
+        "d854749d-0579-4db6-a8a3-f066c7819ee0"
       ],
       "custom_css": [
         "{margin-block: 10px;}",

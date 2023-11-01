@@ -4,7 +4,8 @@
       "type": "article",
       "custom_css": [
         ".wrapper {padding: 0 !important;}",
-        "header,.rte--article,.grid__item,.share-holder {padding-inline-start: 16px;}"
+        "header,.rte--article,.grid__item,.share-holder {padding-inline-start: 16px;}",
+        "#subscribe-default-newsletter {color: #1d519c !important; background-color: white; width: 100%;}"
       ],
       "settings": {
         "meta": true,
