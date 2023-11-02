@@ -182,7 +182,7 @@ min-width: 100%;}
 .lazy-image.mobile-zoom-wrapper > img {
   top: 10%;
 }
-
+/* Pinterest button on product card */
 .pin-it-button {
   width: fit-content;
   z-index: 100;
@@ -208,6 +208,10 @@ min-width: 100%;}
 .pin-it-button>a>svg {
   padding: 5px;
   height:30px
+}
+
+.pin-it-button {
+  display: none;
 }
 
 /* product page share */
