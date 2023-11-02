@@ -6,8 +6,8 @@
         Looking for something specific
       </div>
       <div>
-          <label for="search"></label>
-          <input type="search" id="search" placeholder="Type to search" data-search>
+        <input type="text" id="search" placeholder="Type to search" data-search>
+          <button class="search-button" type="button">SUBMIT</button>
       </div>
     </div>
   </div>
@@ -88,14 +88,14 @@ function searchFunction() {
     var articleLinks = posts[i].getElementsByClassName('custom-blog-article-link');
 
     // Check if the title or any article contains the search filter
-    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+    if (title.innerText.toUpperCase().indexOf(filter) > -1 || title.innerText == "") {
       posts[i].style.display = '';
     } else {
       var foundMatch = false;
 
       for (var j = 0; j < articleLinks.length; j++) {
         var article = articleLinks[j].getElementsByClassName('custom-blog-article')[0];
-        if (article.innerText.toUpperCase().indexOf(filter) > -1) {
+        if (article.innerText.toUpperCase().indexOf(filter) > -1 || article.innerText == "") {
           foundMatch = true;
           break;
         }
@@ -111,9 +111,19 @@ function searchFunction() {
 }
 
 // Bind the search function to the input's keyup event
-var searchInput = document.getElementById('search');
-searchInput.addEventListener('keyup', searchFunction);
+// var searchInput = document.getElementById('search');
+// searchInput.addEventListener('keyup', searchFunction);
 
+var searchButton = document.querySelector('.search-button');
+searchButton.addEventListener('click', searchFunction);
+input.addEventListener('keydown', function(event) {
+  if (event.keyCode === 13) {
+    searchButton.click()
+  }
+})
+
+
+/* ------------------------------ YEAR FILTERS ------------------------------ */
 const filterDate = document.querySelector(".date-filter")
 
 function setupFilterButtons() {
@@ -211,6 +221,13 @@ setupFilterButtons();
     margin-bottom: 0;
   }
 
+
+  .search-button {
+    background-color: white;
+    color: #1d519c;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
   .filtered {
     border: 3px solid red;
   }
